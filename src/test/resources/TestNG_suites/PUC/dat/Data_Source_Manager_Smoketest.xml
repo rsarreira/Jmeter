@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Data Access Testing"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="3" annotations="JDK">
+
+	<parameter name="suiteOwner" value="manuel-gutierrez" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Data Source Manager Smoketest"
+		preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.puc.dat.DS_Manager_Smoketest">
+				<methods>
+					<include name="login" />
+					<include name="verifyManageDataSources" />
+					<include name="editAuditJDBC" />
+					<include name="editBAPom" />
+					<include name="editPDIOpsMartSampleReports" />
+					<include name="editPentahoOperationsMartAnalysis" />
+					<include name="editPentahoOperationsMartJDBC" />
+					<include name="editSampleDataAnalysis" />
+					<include name="editSampleDataJDBC" />
+					<include name="editSteelWheelsMetadata" />
+					<include name="editSteelWheelsAnalysis" />
+					<include name="createDBTablesDataSource" />
+					<include name="importAndExportAnalysis" />
+					<include name="createAnalysisReport"/>
+					<include name="importAndExportMetadata" />
+					<include name="createInteractiveReport"/>
+					<include name="createJDBCConnetion"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Sniff test on Analyser - 5.0"
+	skipfailedinvocationcounts="false" junit="false" parallel="methods"
+	data-provider-thread-count="2" annotations="JDK">
+	
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Analyzer Sniff test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/Analyzer_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.analyzer.PA_SniffTest">
+				<methods>
+					<include name="testMenuAbout" />
+					<include name="testReportCreationOptions" />
+					<include name="testAutoRefresh" />
+					<include name="testSaveAs" />
+					<include name="testPrepareCharts" />
+					<include name="testCharts" />
+					<include name="testToggleAndExport" />
+					<include name="testFilters" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

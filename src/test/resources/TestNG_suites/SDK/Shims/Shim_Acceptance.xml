@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Shims Acceptance"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+	<parameter name="suiteOwner" value="ichekan" />
+
+	<parameter name="{excel_ds_file}" value="XLS_data/Shims_DataProvider.xls" />
+
+	<test verbose="1" name="Shims Acceptance">
+	    	<parameter name="{ds_custom_provider}" value="true" />
+		<classes>
+			<class name="com.pentaho.qa.sdk.shims.ShimsAcceptance" />
+		</classes>
+	</test>
+</suite>
+

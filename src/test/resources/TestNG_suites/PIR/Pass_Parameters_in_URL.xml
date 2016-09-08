@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Pass Parameters in URL"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="5" annotations="JDK">
+
+	<parameter name="suiteOwner" value="siarhei_bolka" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+
+	<test verbose="1" name="Pass Parameters in URL" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.pir.PIR_Pass_Parameters_in_URL">
+				<methods>
+					<include name="login"/>
+					<include name="createInteractiveReport"/>
+					<include name="createInteractiveReportFilter"/>
+					<include name="openInteractiveReportinSeparateTab"/>						
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

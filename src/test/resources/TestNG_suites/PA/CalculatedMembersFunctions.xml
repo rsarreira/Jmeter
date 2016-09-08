@@ -1,0 +1,46 @@
+<suite verbose="1" name="CalculatedMembersFunctions"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="abialkevich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="CalculatedMembersFunctions" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/Analyzer_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.analyzer.CalculatedMembersFunctions">
+				<methods>
+					<include name="testLogin" />
+					<include name="createStheelWheelsReport" />
+					<include name="addFilterYear" />
+					<include name="addFilterMonths" />
+					<include name="addCalculatedMeasure" />
+					<include name="numericFilterTopTen" />
+					<include name="invalidFormulaDefinition" />
+					<include name="createReportOnlyWithMeasures" />
+					<include name="expressionFormulaCalculatedMeasure" />
+					<include name="applyingFilterWithoutAddingFieldToCanvas" />
+					<include name="aggregateFormulaCalculatedMeasure" />
+					<include name="addFilterYear2" />
+					<include name="importSteelWheelsMbsAnalysis" />
+					<include name="createSteelWheelsMbsReport" />
+					<include name="addFilterMonths2" />
+					<include name="addFilterType" />
+					<include name="createFoodmartConnection" />
+					<include name="importFoodmartAnalysis" />
+					<include name="createFoodmartReport" />
+					<include name="medianFormulaCalculatedMeasure" />
+					<include name="editMedianCalculatedMeasure" />
+					<include name="createSteelWheelsReport2" />
+					<include name="devineByZeroFormula" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

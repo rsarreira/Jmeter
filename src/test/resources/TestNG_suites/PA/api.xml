@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="API of analyzer" skipfailedinvocationcounts="false" junit="false" parallel="false" data-provider-thread-count="3" annotations="JDK">
+
+  <listeners>
+    <listener class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+  </listeners>
+
+  <test verbose="1" name="cv.api.report" preserve-order="true">
+    <parameter name="user" value="admin" />
+    <parameter name="password" value="password" />
+    <parameter name="datasourceName" value="SteelWheels: SteelWheelsSales" />
+
+    <classes>
+      <class name="com.pentaho.qa.web.analyzer.AnalyzerApiTest">
+        <methods>
+          <include name="testApi" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

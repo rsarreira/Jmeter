@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Browse Perspective Smoke test on PUC"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="3" annotations="JDK">
+
+	<parameter name="suiteOwner" value="manuel-gutierrez" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Browse Perspective Smoke test"
+		preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.puc.PUC_BrowsePerspectiveSmokeTest">
+				<methods>
+					<include name="login" />
+					<include name="openBrowsePerspectiveAndCheckPanes" />
+					<include name="selectSteelWheelsAndValidateFilesPane" />
+					<include name="createNewFolder" />
+					<include name="checkFolderIsEmpty" />
+					<include name="copyReportOfEachType" />
+					<include name="createChildFolderAndRemoveParentFolder" />
+					<include name="checkTrash" />
+					<include name="restoreFolder" />
+					<include name="checkFolderAndContentsWereRestored" />
+					<!-- <include name="renameParentFolderAndChooseNo" />
+					<include name="renameParentFolderAndChooseYesThenCancel" />
+					<include name="renameParentFolderAndChooseYesThenOK" /> -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

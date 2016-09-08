@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Pentaho User Console2"
+       skipfailedinvocationcounts="false" junit="false" parallel="false"
+       data-provider-thread-count="5" annotations="JDK">
+
+    <parameter name="suiteOwner" value="ichekan"/>
+
+    <test verbose="1" name="1. Logon - valid credentials">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+        <classes>
+            <class name="com.pentaho.qa.web.puc.PUC_SniffTest" >
+                <methods>
+                    <include name="testLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" name="SMTP Mail Server settings" preserve-order="true">
+        <parameter name="hostName" value="smtp.test21"/>
+        <parameter name="portNumber" value="21"/>
+        <parameter name="userName" value="user34"/>
+        <parameter name="password" value="pass34pass"/>
+        <parameter name="emailFromAddress" value="emailsome34"/>
+        <parameter name="emailFromName" value="someName23"/>
+        <classes>
+            <class name="com.pentaho.qa.web.puc.AdminMailServer">
+                <methods>
+                    <include name="testSetSMTPSettings" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+

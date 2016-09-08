@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="PDI SDK"
+    skipfailedinvocationcounts="false" junit="false" parallel="false"
+    data-provider-thread-count="1" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value="akupriyanov"/>    
+
+    <test verbose="1" name="SDK generate transformations">
+    	<parameter name="transformationName" value="generated_transformation.ktr" />
+    	<parameter name="jobName" value="generated_job.kjb" />
+               
+        <classes>
+            <class name="com.pentaho.qa.sdk.SDK_PDI_CI_test"/>
+            <methods>
+                <include name="generateTransformationTest" />
+                <include name="runTransformationTest" />
+                <include name="generateJobTest" />
+                <include name="runJobTest" />
+            </methods>
+        </classes>
+    </test>
+ </suite>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Data Access Testing"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="3" annotations="JDK">
+
+	<parameter name="suiteOwner" value="manuel-gutierrez" />
+
+	<listeners>
+		<listener class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+	
+	<test verbose="1" name="DSW - Negative Tests" preserve-order="true">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+        
+        <parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls"/>
+        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.dat.Negative_Tests">
+				<methods>
+	                <include name="login" />
+	                <include name="createCsvDataSource" />
+	                <include name="editCsvDataSource" />
+	                <include name="createInteractiveReport" />
+	                <include name="createConnection" />
+	            	<include name="overwriteConnection" />
+	            	<include name="createDBTablesDataSource" />
+	            	<include name="overwriteDBTablesDataSource" />
+	            </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

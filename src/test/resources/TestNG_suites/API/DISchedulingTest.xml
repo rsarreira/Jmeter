@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="API"
+    skipfailedinvocationcounts="false" junit="false" parallel="false"
+    data-provider-thread-count="1" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value="akupriyanov"/>    
+
+    <test verbose="1" name="DI Scheduling API tests">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+    
+    	<parameter name="SDK_job_file" value="/src/test/resources/SDK_data/generated_job.kjb"/>
+               
+        <classes>
+            <class name="com.pentaho.qa.api.DISchedulingTest"/>
+            <methods>
+                <include name="prerequsite" />
+				<include name="jobStateTest" />
+                <include name="canScheduleTest" />
+				<include name="isScheduleAllowedTest" />
+				<include name="jobTest" />
+                <include name="getJobsTest" />
+                <include name="jobInfoTest" />
+                <include name="stateTest" />
+                <include name="pauseStartTest" />
+                <include name="shutdownStartTest" />
+                <include name="pauseJobTest" />
+                <include name="triggerJobTest" />
+                <include name="removeJobTest" />
+            </methods>
+        </classes>
+    </test>
+ </suite>
+

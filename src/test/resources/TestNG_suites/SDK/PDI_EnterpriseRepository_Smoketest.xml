@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="PDI SDK" skipfailedinvocationcounts="false"
+	junit="false" parallel="false" data-provider-thread-count="1"
+	annotations="JDK">
+
+	<parameter name="suiteOwner" value="akupriyanov" />
+
+	<test verbose="1" name="PDI SDK Enterprise repository Smoketest"
+		preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="SDK_job_file" value="/src/test/resources/SDK_data/generated_job.kjb" />
+		<parameter name="SDK_trans_file" value="/src/test/resources/SDK_data/generated_transformation.ktr" />
+
+		<classes>
+			<class name="com.pentaho.qa.sdk.EnterpriseRepositorySmokeTest" />
+			<methods>
+				<include name="loginRepositoryTest" />
+				<include name="verifyRepositoriesFileTest" />
+				<include name="connectRepositoryTest" />
+				<include name="saveJobTransformationTest" />
+				<include name="runJobTransformationLocallyTest" />
+				<include name="runJobTransformationRemotely" />
+				<include name="disconnectRepositoryTest" />
+				<include name="updateRepositoryTest" />
+				<include name="deleteRepositoryTest" />
+			</methods>
+		</classes>
+	</test>
+</suite>
+

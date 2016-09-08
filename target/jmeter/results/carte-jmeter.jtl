@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="93" lt="93" ts="1473176846221" s="false" lb="Add ExportTrans" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1201" ng="1" na="1"/>
+<httpSample t="14" lt="14" ts="1473176846322" s="false" lb="Add ExportJob" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1201" ng="1" na="1"/>
+<httpSample t="12" lt="12" ts="1473176846337" s="false" lb="AddJobServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1195" ng="1" na="1"/>
+<httpSample t="9" lt="9" ts="1473176846350" s="false" lb="AddTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1199" ng="1" na="1"/>
+<httpSample t="3" lt="3" ts="1473176846360" s="false" lb="AllocateServerSocketServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1211" ng="1" na="1"/>
+<httpSample t="3" lt="3" ts="1473176846364" s="false" lb="ExecuteTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1207" ng="1" na="1"/>
+<httpSample t="0" lt="0" ts="1473176846368" s="false" lb="ExecuteTransServlet2" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 76: http://localhost:8080/kettle/executeTrans/?user=admin&amp;pass=password&amp;trans=D:\performance/src/test/resources/jmeter_data/dummy_trans.ktr&amp;level=Debug" tn="Standard User Load 1-1" dt="text" by="1063" ng="1" na="1"/>
+<httpSample t="0" lt="0" ts="1473176846369" s="false" lb="ExecuteJobServlet" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 72: http://localhost:8080/kettle/executeJob/?user=admin&amp;pass=password&amp;job=D:\performance/src/test/resources/jmeter_data/dummy_job.kjb&amp;level=Debug" tn="Standard User Load 1-1" dt="text" by="1057" ng="1" na="1"/>
+<httpSample t="2" lt="2" ts="1473176846370" s="false" lb="GetSlavesServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1199" ng="1" na="1"/>
+<httpSample t="3" lt="3" ts="1473176846373" s="false" lb="GetJobImageServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1197" ng="1" na="1"/>
+<httpSample t="3" lt="3" ts="1473176846376" s="false" lb="GetJobStatusServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1201" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846380" s="false" lb="ListServerSocketServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1203" ng="1" na="1"/>
+<httpSample t="3" lt="3" ts="1473176846385" s="false" lb="NextSequenceValueServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1205" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846389" s="false" lb="PauseTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1203" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846394" s="false" lb="CleanupTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1207" ng="1" na="1"/>
+<httpSample t="7" lt="7" ts="1473176846399" s="false" lb="RegisterSlaveServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1209" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846407" s="false" lb="RemoveJobServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1201" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846411" s="false" lb="RemoveTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1205" ng="1" na="1"/>
+<httpSample t="3" lt="3" ts="1473176846416" s="false" lb="PrepareExecutionTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1205" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846420" s="false" lb="StartExecutionTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1201" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846425" s="false" lb="StartJobServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1199" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846430" s="false" lb="StartTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1203" ng="1" na="1"/>
+<httpSample t="5" lt="5" ts="1473176846434" s="false" lb="StopJobServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1197" ng="1" na="1"/>
+<httpSample t="3" lt="3" ts="1473176846440" s="false" lb="StopTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1201" ng="1" na="1"/>
+<httpSample t="3" lt="3" ts="1473176846444" s="false" lb="GetTransImageServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1201" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846447" s="false" lb="GetTransStatusServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1205" ng="1" na="1"/>
+<httpSample t="4" lt="4" ts="1473176846452" s="false" lb="GetStatusServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1195" ng="1" na="1"/>
+<httpSample t="3" lt="2" ts="1473176846456" s="false" lb="RunJobServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1193" ng="1" na="1"/>
+<httpSample t="2" lt="2" ts="1473176846459" s="false" lb="RunTransServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1197" ng="1" na="1"/>
+<httpSample t="15" lt="15" ts="1473176846461" s="true" lb="GetRootServlet" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="579" ng="1" na="1"/>
+<httpSample t="2" lt="2" ts="1473176846479" s="false" lb="SniffStepServlet" rc="404" rm="Not Found" tn="Standard User Load 1-1" dt="text" by="1199" ng="1" na="1"/>
+
+</testResults>

@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Layout Panel test"
+	skipfailedinvocationcounts="false" junit="false" parallel="methods"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="yury_dziohtseu" />
+	<parameter name="columns" value="Customer Name, Status" />
+	<parameter name="groups" value="Territory, City" />
+	<parameter name="dataSource" value="Orders" />
+	<parameter name="title" value="Layout Panel test" />
+	<parameter name="name" value="Layout_Panel_test_{generate_uuid}" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Layout Panel test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.pir.PIR_LayoutPanelTest">
+				<methods>
+					<include name="testLayoutPanel" />  
+					<include name="reorderTest" />
+					<include name="moveTest" />
+					<include name="removeTest" />	
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

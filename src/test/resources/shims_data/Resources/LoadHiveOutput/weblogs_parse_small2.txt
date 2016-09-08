@@ -1,0 +1,11 @@
+58.40.07.17	03/Jun/2012:09:21:00 -0500	03	Jun	06	2012	09	21	00	-0500	GET	/careers	200	0	/careers	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)
+58.40.07.17	03/Jun/2012:09:21:33 -0500	03	Jun	06	2012	09	21	33	-0500	GET	/careers	200	0	/careers	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)
+57.618.684.654	03/Jun/2012:09:22:30 -0500	03	Jun	06	2012	09	22	30	-0500	GET	/product/product3	200	0	-	Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3
+58.40.07.17	03/Jun/2012:09:23:37 -0500	03	Jun	06	2012	09	23	37	-0500	GET	/careers/sales	200	0	/careers	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)
+58.40.07.17	03/Jun/2012:09:23:38 -0500	03	Jun	06	2012	09	23	38	-0500	GET	/careers/sales	200	0	/careers/sales	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)
+57.618.684.654	03/Jun/2012:09:23:54 -0500	03	Jun	06	2012	09	23	54	-0500	GET	/product/product12	200	0	/product/product3	Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3
+58.40.07.17	03/Jun/2012:09:23:58 -0500	03	Jun	06	2012	09	23	58	-0500	GET	/careers/account	200	0	/careers/sales	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)
+58.40.07.17	03/Jun/2012:09:23:59 -0500	03	Jun	06	2012	09	23	59	-0500	GET	/careers/account	200	0	/careers/account	Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729)
+57.618.684.654	03/Jun/2012:09:25:00 -0500	03	Jun	06	2012	09	25	00	-0500	GET	/product/product3	200	0	/product/product12	Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3
+11.308.46.48	03/Jun/2012:09:25:30 -0500	03	Jun	06	2012	09	25	30	-0500	GET	/product/product3	200	0	-	Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+13.640.53.680	03/Jun/2012:09:27:30 -0500	03	Jun	06	2012	09	27	30	-0500	GET	/demo	200	0	-	Jakarta Commons-HttpClient/3.0-rc4

@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Interactive Report Smoketest - 5.x"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="5" annotations="JDK">
+
+	<parameter name="suiteOwner" value="pavel-hrakovich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+
+	<test verbose="1" name="PIR Sniff test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.pir.PIR_SmokeTest">
+				<methods>
+					<include name="testCreateReport" />
+					<include name="testExportPDF"/>
+					<include name="testExportExcel97"/>
+					<include name="testExportCSV"/>
+					<include name="testExportExcel"/>
+					<include name="testAddFilters" />
+					<include name="testModifyFilters" />
+					<include name="testFilterResults" />
+					<include name="prepareCreateFilterByDnD" />
+					<include name="testCreateFilterByDnD" />
+					<include name="testEditFilter" />
+					<include name="testDeleteFilter" />
+					<include name="testEditReportHeaders" />
+					<include name="testUndo" />
+					<include name="testRedo" />
+					<include name="testLayoutPanel" />
+					<include name="testAddGroupByDnd" />
+					<include name="testGroupSortingAppears" />
+					<include name="testColumnSortingAppears" />
+					<include name="testSorting" />
+					<include name="testSelectAll" />
+					<include name="testRemoveColumn" /> 
+					<include name="testFormatting" />
+					<include name="testGeneral" />
+					<include name="testPrompts" />
+					<include name="testSave" />
+					<include name="testEdit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

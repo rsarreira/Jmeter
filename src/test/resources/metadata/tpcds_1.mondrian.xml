@@ -1,0 +1,472 @@
+<Schema name="TPCDS_1">
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Date">
+    <Hierarchy name="Date" visible="true" hasAll="true" primaryKey="d_date_sk">
+      <Table name="date_dim">
+      </Table>
+      <Level name="Year" visible="true" column="d_year" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Quarter" visible="true" column="d_qoy" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Month" visible="true" column="d_moy" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Date" visible="true" column="d_date" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Day" visible="true" hasAll="true" primaryKey="d_date_sk">
+      <Table name="date_dim">
+      </Table>
+      <Level name="DayName" visible="true" column="d_day_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Item">
+    <Hierarchy name="Manufacturer" visible="true" hasAll="true" primaryKey="i_item_sk">
+      <Table name="item">
+      </Table>
+      <Level name="Manufacturer" visible="true" table="item" column="i_manufact_id" type="Integer" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        <Property name="Manufacturer Name" column="i_manufact" type="String">
+        </Property>
+      </Level>
+      <Level name="Brand" visible="true" table="item" column="i_brand_id" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Property name="Brand Name" column="i_brand" type="String">
+        </Property>
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Category" visible="true" hasAll="true" primaryKey="i_item_sk">
+      <Table name="item">
+      </Table>
+      <Level name="Category" visible="true" table="item" column="i_category_id" type="Integer" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        <Property name="Category Name" column="i_category" type="String">
+        </Property>
+      </Level>
+      <Level name="Class" visible="true" table="item" column="i_class_id" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Property name="Class Name" column="i_class" type="String">
+        </Property>
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Manager" visible="true" hasAll="true" primaryKey="i_item_sk">
+      <Table name="item">
+      </Table>
+      <Level name="Manager ID" visible="true" table="item" column="i_manager_id" type="Integer" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Item Info" visible="true" hasAll="true" primaryKey="i_item_sk">
+      <Table name="item">
+      </Table>
+      <Level name="Item ID" visible="true" table="item" column="i_item_id" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        <Property name="Description" column="i_item_desc" type="String">
+        </Property>
+        <Property name="Color" column="i_color" type="String">
+        </Property>
+        <Property name="Current Price" column="i_current_price" type="Numeric">
+        </Property>
+      </Level>
+      <Level name="Key" visible="true" table="item" column="i_item_sk" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Store">
+    <Hierarchy name="Store" visible="true" hasAll="true" primaryKey="s_store_sk">
+      <Table name="store">
+      </Table>
+      <Level name="Store ID" visible="true" table="store" column="s_store_id" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Store Name" visible="true" table="store" column="s_store_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Location" visible="true" hasAll="true" primaryKey="s_store_sk">
+      <Table name="store">
+      </Table>
+      <Level name="State" visible="true" table="store" column="s_state" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Zip" visible="true" table="store" column="s_zip" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="GMT Offset" visible="true" table="store" column="s_gmt_offset" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Customer">
+    <Hierarchy name="Customer" visible="true" hasAll="true" primaryKey="c_customer_sk">
+      <Table name="customer">
+      </Table>
+      <Level name="ID" visible="true" table="customer" column="c_customer_id" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Address" visible="true" hasAll="true" primaryKey="c_current_addr_sk" primaryKeyTable="customer">
+      <Join leftKey="c_current_addr_sk" rightKey="ca_address_sk">
+        <Table name="customer">
+        </Table>
+        <Table name="customer_address">
+        </Table>
+      </Join>
+      <Level name="State" visible="true" table="customer_address" column="ca_state" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="City" visible="true" table="customer_address" column="ca_city" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Zip" visible="true" table="customer_address" column="ca_zip" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Street Name" visible="true" table="customer_address" column="ca_street_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Steet Number" visible="true" table="customer_address" column="ca_street_number" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="GMT Offset" visible="true" table="customer_address" column="ca_gmt_offset" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Customer Demographics" visible="true" hasAll="true" primaryKey="c_customer_sk" primaryKeyTable="customer">
+      <Join leftKey="c_current_cdemo_sk" rightKey="cd_demo_sk">
+        <Table name="customer">
+        </Table>
+        <Table name="customer_demographics">
+        </Table>
+      </Join>
+      <Level name="Gender" visible="true" table="customer_demographics" column="cd_gender" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Marital Status" visible="true" table="customer_demographics" column="cd_marital_status" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Education Status" visible="true" table="customer_demographics" column="cd_education_status" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Household Demographics" visible="true" hasAll="true" primaryKey="c_customer_sk" primaryKeyTable="customer">
+      <Join leftKey="c_current_hdemo_sk" rightKey="hd_demo_sk">
+        <Table name="customer">
+        </Table>
+        <Table name="household_demographics">
+        </Table>
+      </Join>
+      <Level name="Buy Potential" visible="true" table="household_demographics" column="hd_buy_potential" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="First Sales Date" visible="true" hasAll="true" primaryKey="c_customer_sk" primaryKeyTable="customer">
+      <Join leftKey="c_first_sales_date_sk" rightKey="d_date_sk">
+        <Table name="customer">
+        </Table>
+        <Table name="date_dim">
+        </Table>
+      </Join>
+      <Level name="Year" visible="true" table="date_dim" column="d_year" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="First ShipTo Date" visible="true" hasAll="true" primaryKey="c_customer_sk" primaryKeyTable="customer">
+      <Join leftKey="c_first_shipto_date_sk" rightKey="d_date_sk">
+        <Table name="customer">
+        </Table>
+        <Table name="date_dim">
+        </Table>
+      </Join>
+      <Level name="Year" visible="true" table="date_dim" column="d_year" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Customer Demographics">
+    <Hierarchy name="Demographics" visible="true" hasAll="true" primaryKey="cd_demo_sk">
+      <Table name="customer_demographics">
+      </Table>
+      <Level name="Gender" visible="true" table="customer_demographics" column="cd_gender" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Marital Status" visible="true" table="customer_demographics" column="cd_marital_status" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Education Status" visible="true" table="customer_demographics" column="cd_education_status" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Household Demographics">
+    <Hierarchy name="Demographics" visible="true" hasAll="true" primaryKey="hd_demo_sk">
+      <Table name="household_demographics">
+      </Table>
+      <Level name="Dependents" visible="true" table="household_demographics" column="hd_dep_count" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Buy Potential" visible="true" table="household_demographics" column="hd_buy_potential" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Promotion">
+    <Hierarchy name="Channel" visible="true" hasAll="true" primaryKey="p_promo_sk">
+      <Table name="promotion">
+      </Table>
+      <Level name="TV" visible="true" table="promotion" column="p_channel_tv" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Event" visible="true" table="promotion" column="p_channel_event" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Email" visible="true" table="promotion" column="p_channel_email" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Customer Address">
+    <Hierarchy name="Address" visible="true" hasAll="true" primaryKey="ca_address_sk">
+      <Table name="customer_address">
+      </Table>
+      <Level name="Country" visible="true" table="customer_address" column="ca_country" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Annotations>
+          <Annotation name="Data.Role">
+            <![CDATA[Geography]]>
+          </Annotation>
+          <Annotation name="Geo.Role">
+            <![CDATA[country]]>
+          </Annotation>
+        </Annotations>
+      </Level>
+      <Level name="State" visible="true" table="customer_address" column="ca_state" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Annotations>
+          <Annotation name="Data.Role">
+            <![CDATA[Geography]]>
+          </Annotation>
+          <Annotation name="Geo.Role">
+            <![CDATA[state]]>
+          </Annotation>
+          <Annotation name="Geo.RequiredParents">
+            <![CDATA[country]]>
+          </Annotation>
+        </Annotations>
+      </Level>
+      <Level name="City" visible="true" table="customer_address" column="ca_city" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        <Annotations>
+          <Annotation name="Data.Role">
+            <![CDATA[Geography]]>
+          </Annotation>
+          <Annotation name="Geo.Role">
+            <![CDATA[city]]>
+          </Annotation>
+          <Annotation name="Geo.RequiredParents">
+            <![CDATA[state]]>
+          </Annotation>
+        </Annotations>
+      </Level>
+      <Level name="Zip" visible="true" table="customer_address" column="ca_zip" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Street Name" visible="true" table="customer_address" column="ca_street_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Street Number" visible="true" table="customer_address" column="ca_street_number" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="GMT Offset" visible="true" table="customer_address" column="ca_gmt_offset" type="Numeric" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Store Sales" visible="true" cache="false" enabled="true">
+    <Table name="store_sales">
+    </Table>
+    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="ss_item_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Date" name="Date" visible="true" foreignKey="ss_sold_date_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Store" name="Store" visible="true" foreignKey="ss_store_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer" name="Customer" visible="true" foreignKey="ss_customer_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Household Demographics" name="Household Demographics" visible="true" foreignKey="ss_hdemo_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer Demographics" name="Customer Demographics" visible="true" foreignKey="ss_cdemo_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Promotion" name="Promotion" visible="true" foreignKey="ss_promo_sk" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" foreignKey="ss_sold_time_sk" highCardinality="false" name="Time">
+      <Hierarchy name="Time" visible="true" hasAll="true" primaryKey="t_time_sk">
+        <Table name="time_dim">
+        </Table>
+        <Level name="Hour" visible="true" table="time_dim" column="t_hour" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Minute" visible="true" table="time_dim" column="t_minute" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Total Extended Price" column="ss_ext_sales_price" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Sales Price" column="ss_sales_price" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Average Quantity" column="ss_quantity" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Average List Price" column="ss_list_price" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Average Coupon Amount" column="ss_coupon_amt" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Average Sales Price" column="ss_sales_price" aggregator="avg" visible="true">
+    </Measure>
+    <Measure name="Total Net Profit" column="ss_net_profit" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Wholesale Cost" column="ss_wholesale_cost" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Coupon Amount" column="ss_coupon_amt" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total List Price" column="ss_list_price" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Count" column="ss_item_sk" aggregator="distinct-count" visible="true">
+    </Measure>
+    <CalculatedMember name="Gross Margin" formula="[Measures].[Total Net Profit] / [Measures].[Total Extended Price]" dimension="Measures" visible="true">
+    </CalculatedMember>
+  </Cube>
+  <Cube name="Web Sales" visible="true" cache="false" enabled="true">
+    <Table name="web_sales">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="ws_web_site_sk" highCardinality="false" name="Web Site">
+      <Hierarchy name="Web Site" visible="true" hasAll="true" primaryKey="web_site_sk">
+        <Table name="web_site">
+        </Table>
+        <Level name="Company" visible="true" column="web_company_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="ID" visible="true" table="web_site" column="web_site_id" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <DimensionUsage source="Date" name="Date" visible="true" foreignKey="ws_sold_date_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="ws_item_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer" name="Billed Customer" visible="true" foreignKey="ws_bill_customer_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer Address" name="Delivery Customer" visible="true" foreignKey="ws_ship_addr_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Promotion" name="Promotion" visible="true" foreignKey="ws_promo_sk" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Sales Price" column="ws_sales_price" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Order Count" column="ws_order_number" aggregator="distinct-count" visible="true">
+    </Measure>
+    <Measure name="Shipping Cost" column="ws_ext_ship_cost" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Net Profit" column="ws_net_profit" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Net Paid" column="ws_net_paid" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Store Returns" visible="true" cache="false" enabled="true">
+    <Table name="store_returns">
+    </Table>
+    <DimensionUsage source="Date" name="Date" visible="true" foreignKey="sr_returned_date_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="sr_item_sk" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" foreignKey="sr_item_sk" highCardinality="false" name="Return">
+      <Hierarchy name="Info" visible="true" hasAll="true" primaryKey="sr_item_sk">
+        <Table name="store_returns">
+        </Table>
+        <Level name="Customer Key" visible="true" table="store_returns" column="sr_customer_sk" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Store Key" visible="true" table="store_returns" column="sr_store_sk" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <DimensionUsage source="Store" name="Store" visible="true" foreignKey="sr_store_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer" name="Customer" visible="true" foreignKey="sr_customer_sk" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Total Net Loss" column="sr_net_loss" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Return Amount" column="sr_return_amt" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Catalog Sales" visible="true" cache="false" enabled="true">
+    <Table name="catalog_sales">
+    </Table>
+    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="cs_item_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Promotion" name="Promotion" visible="true" foreignKey="cs_promo_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Date" name="Sold Date" visible="true" foreignKey="cs_sold_date_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer Address" name="Billing Address" visible="true" foreignKey="cs_bill_addr_sk" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" foreignKey="cs_catalog_page_sk" highCardinality="false" name="Catalog Page">
+      <Hierarchy name="Catalog Page" visible="true" hasAll="true" primaryKey="cp_catalog_page_sk">
+        <Table name="catalog_page">
+        </Table>
+        <Level name="ID" visible="true" table="catalog_page" column="cp_catalog_page_id" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Total Net Profit" column="cs_net_profit" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Extended Price" column="cs_ext_sales_price" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Extended Discount" column="cs_ext_discount_amt" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Quantity" column="cs_quantity" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Wholesale Cost" column="cs_wholesale_cost" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Total Sales Price" column="cs_sales_price" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Catalog Returns" visible="true" cache="false" enabled="true">
+    <Table name="catalog_returns">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="cr_catalog_page_sk" highCardinality="false" name="Catalog Page">
+      <Hierarchy name="Catalog Page" visible="true" hasAll="true" primaryKey="cp_catalog_page_sk">
+        <Table name="catalog_page">
+        </Table>
+        <Level name="ID" visible="true" column="cp_catalog_page_id" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="cr_item_sk" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" foreignKey="cr_call_center_sk" highCardinality="false" name="Call Center">
+      <Hierarchy name="Call Center" visible="true" hasAll="true" primaryKey="cc_call_center_sk">
+        <Table name="call_center">
+        </Table>
+        <Level name="ID" visible="true" table="call_center" column="cc_call_center_id" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Name" visible="true" table="call_center" column="cc_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Manager" visible="true" table="call_center" column="cc_manager" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <DimensionUsage source="Date" name="Returned Date" visible="true" foreignKey="cr_returned_date_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer" name="Returning Customer" visible="true" foreignKey="cr_returning_customer_sk" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Total Net Loss" column="cr_net_loss" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Web Returns" visible="true" cache="false" enabled="true">
+    <Table name="web_returns">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="wr_web_page_sk" highCardinality="false" name="Web Page">
+      <Hierarchy name="Web Page" visible="true" hasAll="true" primaryKey="wp_web_page_sk">
+        <Table name="web_page">
+        </Table>
+        <Level name="ID" visible="true" table="web_page" column="wp_web_page_id" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="wr_item_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Customer Demographics" name="Customer Demographics" visible="true" foreignKey="wr_refunded_cdemo_sk" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Date" name="Date" visible="true" foreignKey="wr_returned_date_sk" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Net Loss" column="wr_net_loss" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+  <Cube name="Inventory" visible="true" cache="false" enabled="true">
+    <Table name="inventory">
+    </Table>
+    <DimensionUsage source="Date" name="Date" visible="true" foreignKey="inv_date_sk" highCardinality="false">
+    </DimensionUsage>
+    <Dimension type="StandardDimension" visible="true" foreignKey="inv_warehouse_sk" highCardinality="false" name="Warehouse">
+      <Hierarchy name="Warehouse" visible="true" hasAll="true" primaryKey="w_warehouse_sk">
+        <Table name="warehouse">
+        </Table>
+        <Level name="Name" visible="true" table="warehouse" column="w_warehouse_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <DimensionUsage source="Item" name="Item" visible="true" foreignKey="inv_item_sk" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Quantity" column="inv_quantity_on_hand" aggregator="distinct-count" visible="true">
+    </Measure>
+  </Cube>
+  <VirtualCube enabled="true" name="Web" visible="true">
+    <VirtualCubeDimension cubeName="Web Sales" visible="true" highCardinality="false" name="Date">
+    </VirtualCubeDimension>
+    <VirtualCubeDimension cubeName="Web Returns" visible="true" highCardinality="false" name="Web Page">
+    </VirtualCubeDimension>
+    <VirtualCubeDimension cubeName="Web Sales" visible="true" highCardinality="false" name="Item">
+    </VirtualCubeDimension>
+    <VirtualCubeMeasure cubeName="Web Sales" name="[Measures].[Net Profit]" visible="true">
+    </VirtualCubeMeasure>
+    <VirtualCubeMeasure cubeName="Web Returns" name="[Measures].[Net Loss]" visible="true">
+    </VirtualCubeMeasure>
+    <CalculatedMember name="Profit" formula="[Measures].[Net Profit] - [Measures].[Net Loss]" dimension="Measures" visible="true">
+    </CalculatedMember>
+  </VirtualCube>
+</Schema>

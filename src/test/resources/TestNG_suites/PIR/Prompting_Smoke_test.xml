@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Prompting Smoke test on PIR"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="3" annotations="JDK">
+
+	<parameter name="suiteOwner" value="manuel-gutierrez" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Prompting Smoke test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.pir.PIR_PromptingSmokeTest">
+				<methods>
+					<include name="login" />
+					<include name="createInteractiveReport" />
+					<include name="addTerritoryPrompt" />
+					<include name="addProductLinePrompt" />
+					<include name="editTerritoryPrompt" />					
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

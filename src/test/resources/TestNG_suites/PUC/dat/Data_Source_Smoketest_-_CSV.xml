@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Data_Source_Smoketest_CSV"
+	skipfailedinvocationcounts="false" junit="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="abialkevich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Data_Source_Smoketest_CSV" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.puc.dat.Data_Source_Smoketest_CSV">
+				<methods>
+					<include name="openManageDataSource" />
+					<include name="validatingButtonsState" />
+					<include name="dlgImportFile" />
+					<include name="automaticallyDeterminedSettings" />
+					<include name="validatingButtonsStateWithUploadedFile" />
+					<include name="filePreviewReflectNewEnclosure" />
+					<include name="filePreviewReflectNewEncoding" />
+					<include name="filePreviewReflectNewDelimeter" />
+					<include name="stagingSettingsPage" />
+					<include name="deSelectAllCheckBoxes" />
+					<include name="validatingButtonsStateDeselectedCheckboxes" />
+					<include name="selectAllCheckBoxes" />
+					<include name="typePopupContent" />
+					<include name="sourceFormatPopupContent" />
+					<include name="editableLengthColumn" />
+					<include name="editableNameColumn" />
+					<include name="editablePrecisionColumn" />
+					<include name="sourceFormatDate" />
+					<include name="showFileContentTenRows" />
+					<include name="finishCreatingCsvDataSource" />
+					<include name="editCreatedCsvDataSource" />
+					<include name="editDataSourceFromModel" />
+					<include name="preservedChanges" />
+					<include name="editDataSourceFromModel2" />
+					<include name="cancelDeleteCsvDataSource" />
+					<include name="confirmlDeleteCsvDataSource" />
+					<include name="createCsvSourceUsingTxtFile" />
+					<include name="defineNumericFields" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

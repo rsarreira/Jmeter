@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Color Picker test"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="3" annotations="JDK">
+
+	<parameter name="suiteOwner" value="manuel-gutierrez" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Color Picker test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.pir.PIR_ColorPickerTest">
+				<methods>
+					<include name="login" />
+					<include name="createReportAndChangeFormatting" />
+					<include name="changeFormattingWithInUseColor" />
+					<include name="verifyCurrentColorInColorPicker" />
+					<include name="setCustomColorWithRgbValues" />
+					<include name="setCustomColorWithHexValue" />
+					<include name="setCustomColorWithColorField" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Data Source Edit Testing"
+    skipfailedinvocationcounts="false" junit="false" parallel="tests"
+    data-provider-thread-count="2" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value="pavel_mikhnevich"/>
+
+    <listeners>
+            <listener class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer"/>
+    </listeners>
+  
+    <test verbose="1" name="DSW - Edit" preserve-order="true">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+
+        <classes>
+            <class name="com.pentaho.qa.web.puc.dat.DSWEditTest">
+            <methods>
+                <include name="openEdit" />
+             </methods>
+            </class>
+        </classes>
+    </test>
+ </suite>
+

@@ -1,0 +1,101 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,failureMessage,bytes,grpThreads,allThreads,URL,Latency
+1473176439987,393,Login,200,"Number of samples in transaction : 1, number of failing samples : 0",Standard User Load 1-1,true,,5342,1,1,null,0
+1473176440647,185,GET /authorization/action/isauthorized,200,OK,Standard User Load 1-1,true,,152,1,1,http://localhost:8080/pentaho/api/authorization/action/isauthorized,185
+1473176440832,226,PUT DirectoryResource,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/dirs/:public:jmeter-test-044039,226
+1473176441058,65,GET /repo/files/{pathId}/properties,200,OK,Standard User Load 1-1,true,,697,1,1,http://localhost:8080/pentaho/api/repo/files/:public:jmeter-test-044039/properties,65
+1473176441317,42,PUT /repo/files/deletepermanent,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/delete,42
+1473176441360,18,GET /repo/files/canAdminister,200,OK,Standard User Load 1-1,true,,141,1,1,http://localhost:8080/pentaho/api/repo/files/canAdminister,18
+1473176441379,23,GET /repo/files/canCreate,200,OK,Standard User Load 1-1,true,,141,1,1,http://localhost:8080/pentaho/api/repo/files/canCreate,23
+1473176441403,79,GET /repo/files/children,200,OK,Standard User Load 1-1,true,,2359,1,1,http://localhost:8080/pentaho/api/repo/files/children?showHidden=false&filter=*|FILES&_=1389042244670,79
+1473176441487,61,PUT /repo/files/{pathId}/createDir,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/:public:jmeter-test-044039/createDir,61
+1473176441548,22,GET /repo/files/{pathId}/properties,200,OK,Standard User Load 1-1,true,,697,1,1,http://localhost:8080/pentaho/api/repo/files/:public:jmeter-test-044039/properties,22
+1473176441573,21,GET /repo/files/:/children,200,OK,Standard User Load 1-1,true,,2359,1,1,http://localhost:8080/pentaho/api/repo/files/:/children,21
+1473176441595,17,PUT /repo/files/delete,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/delete,17
+1473176441612,29,GET /repo/files/deleted,200,OK,Standard User Load 1-1,true,,1552,1,1,http://localhost:8080/pentaho/api/repo/files/deleted,29
+1473176441643,22,PUT DirectoryResource,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/dirs/jmeter-test-044039,22
+1473176441665,19,GET /repo/files/{pathId}/children,200,OK,Standard User Load 1-1,true,,2859,1,1,http://localhost:8080/pentaho/api/repo/files/:/children,19
+1473176441695,10,PUT /repo/files/deletepermanent,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/delete,10
+1473176441705,35,GET /repo/files/generatedContentForSchedule,200,OK,Standard User Load 1-1,true,,232,1,1,http://localhost:8080/pentaho/api/repo/files/generatedContentForSchedule?lineageId=,35
+1473176441742,13,GET /repo/files/:/properties,200,OK,Standard User Load 1-1,true,,636,1,1,http://localhost:8080/pentaho/api/repo/files/:/properties,13
+1473176441757,12,PUT /repo/files/restore,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/restore,12
+1473176441770,62,PUT /repo/files/{pathId},200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml,62
+1473176441833,16,GET /repo/files/{pathId},200,OK,Standard User Load 1-1,true,,183,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml,16
+1473176441849,30,PUT /repo/files/{pathId}/acl,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml,30
+1473176441880,17,GET /repo/files/{pathId}/acl,200,OK,Standard User Load 1-1,true,,417,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml,16
+1473176441897,9,GET /repo/files/{pathId}/canAccess,200,OK,Standard User Load 1-1,true,,141,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/canAccess?permissions=1,9
+1473176441906,10,GET /repo/files/{pathId}/canAccessMap,200,OK,Standard User Load 1-1,true,,264,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.txt/canAccessMap?permissions=1,10
+1473176441917,34,GET /repo/files/{pathId}/children,200,OK,Standard User Load 1-1,true,,820,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039/children,34
+1473176441953,17,PUT /repo/files/{pathId}/children (NO_OVERWRITE),200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039/children?mode=3,17
+1473176441971,7,PUT /repo/files/{pathId}/children (OVERWRITE),200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039/children?mode=1,7
+1473176441979,18,GET /repo/files/{pathId}/children (filter),200,OK,Standard User Load 1-1,true,,820,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039/children?showHidden=false&filter=*|FILES&_=1389042244670,18
+1473176441999,51,PUT /repo/files/{pathId}/creator,200,OK,Standard User Load 1-1,true,,102,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/creator,51
+1473176442050,33,GET /repo/files/{pathId}/creator,204,No Content,Standard User Load 1-1,true,,122,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/creator,33
+1473176442084,671,GET /repo/files/{pathId}/download,200,OK,Standard User Load 1-1,true,,1080,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/download?locale=de,671
+1473176442756,18,GET /repo/files/{pathId}/generatedContent,200,OK,Standard User Load 1-1,true,,232,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/generatedContent?locale=de,18
+1473176442775,16,GET /repo/files/{pathId}/generatedContentForUser,200,OK,Standard User Load 1-1,true,,232,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/generatedContentForUser?user=admin,16
+1473176442792,13,GET /repo/files/{pathId}/inline,200,OK,Standard User Load 1-1,true,,418,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/inline,13
+1473176442806,118,PUT /repo/files/{pathId}/localeProperties,200,OK,Standard User Load 1-1,true,,133,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/localeProperties?locale=ja,118
+1473176442924,16,GET /repo/files/{pathId}/localeProperties,200,OK,Standard User Load 1-1,true,,682,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/localeProperties?locale=ja,16
+1473176442941,51,PUT /repo/files/{pathId}/deleteLocale,200,OK,Standard User Load 1-1,true,,133,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/deleteLocale?locale=ja,51
+1473176442992,83,GET /repo/files/{pathId}/locales,200,OK,Standard User Load 1-1,true,,222,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/locales,83
+1473176443076,32,PUT /repo/files/{pathId}/metadata,200,OK,Standard User Load 1-1,true,,133,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/metadata,32
+1473176443109,17,GET /repo/files/{pathId}/metadata,200,OK,Standard User Load 1-1,true,,378,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/metadata,17
+1473176443127,28,GET /repo/files/{pathId}/parameterizable,200,OK,Standard User Load 1-1,true,,142,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/parameterizable,28
+1473176443156,16,GET /repo/files/{pathId}/properties,200,OK,Standard User Load 1-1,true,,836,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/properties,16
+1473176443172,98,PUT /repo/files/{pathId}/rename,200,OK,Standard User Load 1-1,true,,127,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.xml/rename?newName=test_file_8,98
+1473176443270,4495,GET /repo/files/{pathId}/tree,200,OK,Standard User Load 1-1,true,,802001,1,1,http://localhost:8080/pentaho/api/repo/files/:public/tree?showHidden=false&filter=*|FILES&_=1389042244670,4468
+1473176447822,58,POST /repo/files/pathsAccessList,200,OK,Standard User Load 1-1,true,,486,1,1,http://localhost:8080/pentaho/api/repo/files/pathsAccessList,58
+1473176447881,15,GET /repo/files/properties,200,OK,Standard User Load 1-1,true,,636,1,1,http://localhost:8080/pentaho/api/repo/files/properties,15
+1473176447897,8,GET /repo/files/reservedCharacters,200,OK,Standard User Load 1-1,true,,152,1,1,http://localhost:8080/pentaho/api/repo/files/reservedCharacters,8
+1473176447906,7,GET /repo/files/reservedCharactersDisplay,200,OK,Standard User Load 1-1,true,,159,1,1,http://localhost:8080/pentaho/api/repo/files/reservedCharactersDisplay,7
+1473176447914,8041,GET /repo/files/tree,200,OK,Standard User Load 1-1,true,,1493865,1,1,http://localhost:8080/pentaho/api/repo/files/tree?showHidden=false&filter=*|FILES&_=1389042244670,8014
+1473176455990,130,GET /repos/{contextId}/{resourceId} with plugin resource file id,200,OK,Standard User Load 1-1,true,,20129,1,1,http://localhost:8080/pentaho/api/repos/admin-plugin/resources/authenticationProviderModule/authenticationProviderAdmin.html,130
+1473176456121,1728,POST /repos/{contextId}/{resourceId},200,OK,Standard User Load 1-1,true,,192,1,1,http://localhost:8080/pentaho/api/repos/xanalyzer/service/ajax/lookupXmiId,1728
+1473176457850,11,GET /repos/{pathId}/default,303,See Other,Standard User Load 1-1,true,,238,1,1,http://localhost:8080/pentaho/api/repos/public:steel%20wheels:Invoice%20(report).prpt/default,11
+1473176457862,19,GET /session/userWorkspaceDir,200,OK,Standard User Load 1-1,true,,158,1,1,http://localhost:8080/pentaho/api/session/userWorkspaceDir,19
+1473176457882,34,GET /session/workspaceDirForUser,200,OK,Standard User Load 1-1,true,,158,1,1,http://localhost:8080/pentaho/api/session/workspaceDirForUser/admin,34
+1473176457917,278,GET /userrolelist/allRoles,200,OK,Standard User Load 1-1,true,,375,1,1,http://localhost:8080/pentaho/api/userrolelist/allRoles,278
+1473176458195,15,GET /userrolelist/extraRoles,200,OK,Standard User Load 1-1,true,,343,1,1,http://localhost:8080/pentaho/api/userrolelist/extraRoles,15
+1473176458211,23,GET /userrolelist/getRolesForUser,200,OK,Standard User Load 1-1,true,,248,1,1,http://localhost:8080/pentaho/api/userrolelist/getRolesForUser?user=admin,23
+1473176458235,113,GET /userrolelist/getUsersInRole,200,OK,Standard User Load 1-1,true,,267,1,1,http://localhost:8080/pentaho/api/userrolelist/getUsersInRole?role=Authenticated,113
+1473176458349,38,GET /userrolelist/permission-roles,200,OK,Standard User Load 1-1,true,,375,1,1,http://localhost:8080/pentaho/api/userrolelist/permission-roles,38
+1473176458387,52,GET /userrolelist/permission-users,200,OK,Standard User Load 1-1,true,,290,1,1,http://localhost:8080/pentaho/api/userrolelist/permission-users,52
+1473176458440,15,GET /userrolelist/roles,200,OK,Standard User Load 1-1,true,,347,1,1,http://localhost:8080/pentaho/api/userrolelist/roles,15
+1473176458456,7,GET /userrolelist/systemRoles,200,OK,Standard User Load 1-1,true,,291,1,1,http://localhost:8080/pentaho/api/userrolelist/systemRoles,7
+1473176458464,127,GET /userrolelist/users,200,OK,Standard User Load 1-1,true,,290,1,1,http://localhost:8080/pentaho/api/userrolelist/users,127
+1473176458591,6,PUT /repo/files/{pathId},500,Internal Server Error,Standard User Load 1-1,false,,234,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.txt,6
+1473176458598,23,GET /repo/files/{pathId}/properties,204,No Content,Standard User Load 1-1,true,"Premature end of file.
+See log file for further details.",122,1,1,http://localhost:8080/pentaho/api/repo/files/:jmeter-test-044039:test_file_1.txt/properties,23
+1473176458625,188,POST /scheduler/blockout/add,200,OK,Standard User Load 1-1,true,,182,1,1,http://localhost:8080/pentaho/api/scheduler/blockout/add,188
+1473176458822,160,GET /scheduler/blockout/blockoutjobs,200,OK,Standard User Load 1-1,true,,1270,1,1,http://localhost:8080/pentaho/api/scheduler/blockout/blockoutjobs,160
+1473176458983,395,POST /scheduler/blockout/blockstatus,200,OK,Standard User Load 1-1,true,,205,1,1,http://localhost:8080/pentaho/api/scheduler/blockout/blockstatus,395
+1473176459379,20,GET /scheduler/blockout/hasblockouts,200,OK,Standard User Load 1-1,true,,151,1,1,http://localhost:8080/pentaho/api/scheduler/blockout/hasblockouts,20
+1473176459400,53,GET /scheduler/blockout/shouldFireNow,200,OK,Standard User Load 1-1,true,,151,1,1,http://localhost:8080/pentaho/api/scheduler/blockout/shouldFireNow,53
+1473176459454,50,POST /scheduler/blockout/update,200,OK,Standard User Load 1-1,true,,182,1,1,http://localhost:8080/pentaho/api/scheduler/blockout/update?jobid=admin%09BlockoutAction%091473176458713,49
+1473176459505,130,POST /scheduler/blockout/willFire,200,OK,Standard User Load 1-1,true,,151,1,1,http://localhost:8080/pentaho/api/scheduler/blockout/willFire,130
+1473176459636,98,DELETE /scheduler/removeJob,200,OK,Standard User Load 1-1,true,,154,1,1,http://localhost:8080/pentaho/api/scheduler/removeJob,98
+1473176459734,5,GET /scheduler/canSchedule,200,OK,Standard User Load 1-1,true,,151,1,1,http://localhost:8080/pentaho/api/scheduler/canSchedule,5
+1473176459739,6,GET /scheduler/generatedContentForSchedule,200,OK,Standard User Load 1-1,true,,232,1,1,http://localhost:8080/pentaho/api/scheduler/generatedContentForSchedule?lineageId=:public:Steel%20Wheels:Inventory%20List%20(report).prpt,6
+1473176459746,28,GET /scheduler/getContentCleanerJob,204,No Content,Standard User Load 1-1,true,,122,1,1,http://localhost:8080/pentaho/api/scheduler/getContentCleanerJob,0
+1473176459774,20,GET /scheduler/getJobs,200,OK,Standard User Load 1-1,true,,7831,1,1,http://localhost:8080/pentaho/api/scheduler/getJobs,20
+1473176459918,8,GET /scheduler/isScheduleAllowed,200,OK,Standard User Load 1-1,true,,151,1,1,http://localhost:8080/pentaho/api/scheduler/isScheduleAllowed?id=0be566db-cb46-4677-880d-ea3918178fe3,8
+1473176459927,123,POST /scheduler/job,200,OK,Standard User Load 1-1,true,,175,1,1,http://localhost:8080/pentaho/api/scheduler/job,123
+1473176460055,7,GET /scheduler/jobinfo,200,OK,Standard User Load 1-1,true,,1343,1,1,http://localhost:8080/pentaho/api/scheduler/jobinfo?jobId=admin%09JobName%091473176460038,7
+1473176460063,8,POST /scheduler/jobState,200,OK,Standard User Load 1-1,true,,153,1,1,http://localhost:8080/pentaho/api/scheduler/jobState,8
+1473176460071,5,GET /scheduler/state,200,OK,Standard User Load 1-1,true,,154,1,1,http://localhost:8080/pentaho/api/scheduler/state,4
+1473176460076,5,POST /scheduler/pause,200,OK,Standard User Load 1-1,true,,153,1,1,http://localhost:8080/pentaho/api/scheduler/pause,4
+1473176460081,5,POST /scheduler/start,200,OK,Standard User Load 1-1,true,,154,1,1,http://localhost:8080/pentaho/api/scheduler/start,5
+1473176460087,27,POST /scheduler/triggerNow,200,OK,Standard User Load 1-1,true,,153,1,1,http://localhost:8080/pentaho/api/scheduler/triggerNow,26
+1473176460115,80,POST /scheduler/pauseJob,200,OK,Standard User Load 1-1,true,,153,1,1,http://localhost:8080/pentaho/api/scheduler/pauseJob,80
+1473176460196,49,POST /scheduler/resumeJob,200,OK,Standard User Load 1-1,true,,153,1,1,http://localhost:8080/pentaho/api/scheduler/resumeJob,49
+1473176460246,56,DELETE /scheduler/removeJob,200,OK,Standard User Load 1-1,true,,154,1,1,http://localhost:8080/pentaho/api/scheduler/removeJob,56
+1473176460303,33,GET /users,200,OK,Standard User Load 1-1,true,,267,1,1,http://localhost:8080/pentaho/api/users,33
+1473176460337,2,GET /mantle/isAdministrator,200,OK,Standard User Load 1-1,true,,151,1,1,http://localhost:8080/pentaho/api/mantle/isAdministrator,2
+1473176460340,1,GET /mantle/isAuthenticated,200,OK,Standard User Load 1-1,true,,151,1,1,http://localhost:8080/pentaho/api/mantle/isAuthenticated,1
+1473176460342,97,Logout,200,"Number of samples in transaction : 1, number of failing samples : 0",Standard User Load 1-1,true,,8720,1,1,null,0
+1473176460440,5,GET /mantle/isAuthenticated (negative test),401,Unauthorized,Standard User Load 1-1,true,,1327,1,1,http://localhost:8080/pentaho/api/mantle/isAuthenticated,5
+1473176460446,19,Login suzy,200,"Number of samples in transaction : 1, number of failing samples : 0",Standard User Load 1-1,true,,314,1,1,null,0
+1473176460466,4,GET /mantle/isAdministrator,200,OK,Standard User Load 1-1,true,,152,1,1,http://localhost:8080/pentaho/api/mantle/isAdministrator,4
+1473176460471,2,GET /mantle/isAuthenticated,200,OK,Standard User Load 1-1,true,,151,1,1,http://localhost:8080/pentaho/api/mantle/isAuthenticated,1
+1473176460473,14,Logout,200,"Number of samples in transaction : 1, number of failing samples : 0",Standard User Load 1-1,true,,8720,1,1,null,0
+1473176460488,15,Logout,200,"Number of samples in transaction : 1, number of failing samples : 0",Standard User Load 1-1,true,,8720,1,1,null,0

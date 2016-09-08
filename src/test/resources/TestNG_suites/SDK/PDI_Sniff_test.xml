@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="PDI SDK"
+    skipfailedinvocationcounts="false" junit="false" parallel="false"
+    data-provider-thread-count="1" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value="akupriyanov"/>    
+
+    <test verbose="1" name="PDI SDK Sniff test" preserve-order="true">
+               
+        <classes>
+            <class name="com.pentaho.qa.sdk.SDKPDISniffTest"/>
+            <methods>
+                <include name="createTransformationTest" />
+                <include name="addTransformationSteps" />
+                <include name="saveTransformation" />
+                <include name="updateSaveTransformation" />
+                <include name="updateSaveAsTransformation" />
+                <include name="updateSaveAsTransformation2" />
+                <include name="runTransformation" />
+                <include name="reopenTransformation" />
+                <include name="runReopenedTransformation" />
+                <include name="reopenOldTransformation" />
+                <include name="runReopenedOldTransformation" />
+                <include name="createJobTest" />
+                <include name="addJobSteps" />
+                <include name="saveJob" />
+                <include name="updateSaveJob" />
+                <include name="updateSaveAsJob" />
+                <include name="updateSaveAsJob2" />
+                <include name="runJob" />
+                <include name="reopenJob" />
+                <include name="runReopenedJob" />
+                <include name="reopenOldJob" />
+                <include name="runReopenedOldJob" />
+            </methods>
+        </classes>
+    </test>
+ </suite>
+

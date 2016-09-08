@@ -1,0 +1,65 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Model_Smoketest"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="2" annotations="JDK">
+
+	<parameter name="suiteOwner" value="abialkevich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="ModelSmoketest" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="addNewItem" value="New_Item_{generate_uuid}" />
+		<parameter name="addNewItem2" value="New_Item2_{generate_uuid}" />
+		<parameter name="renameItem" value="New_Item_{generate_uuid}_renamed" />
+		<parameter name="reportingItem" value="EMAIL" />
+		<parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls" />
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.puc.dat.ModelSmoketest">
+				<methods>
+					<include name="testLogin" />
+					<include name="testNewHypersonicConnection" />
+					<include name="testNewSQLDataSource" />
+					<include name="openEdit" />
+				 	<include name="addMeasure" />
+					<include name="renameMeasure" /> 
+					<include name="deleteMeasure" />  
+			 		<include name="addLevel" />
+					<include name="deleteLevel" />
+					<include name="addDimension" />
+					<include name="renameDimension" />
+					<include name="deleteDimension" />
+					<include name="dlgAutoPopulateModel" />
+					<include name="cancelAutoPopulate" />
+					<include name="confirmAutoPopulate" />
+					<include name="reportingTabCancelAutoPopulate" />
+					<include name="reportingTabConfirmAutoPopulate" />
+					<include name="clearModelDialogIsOpened" />
+					<include name="cancelClearModelDialog" />
+					<include name="confirmClearModelDialog" />
+					<include name="okButtonIsNotEnabled" />
+					<include name="autoPopulateModel" />
+					<include name="upArrow" />
+					<include name="downArrow" />
+					<include name="collapseAllAnalysisFields" />
+					<include name="expandAllAnalysisFields" />
+					<include name="propertySectionForString" />
+					<include name="propertySectionForNumeric" />  
+					<include name="addCategory" />   
+					<include name="dragAndDropLevel" />  
+					<include name="dlgInvalidModel" />
+					<include name="unableAddDimenFromDiffTableToLevel" /> 
+					<include name="createPirReportWithJoinFieldRemovedFromModel" />
+					<include name="createInteractiveReport" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

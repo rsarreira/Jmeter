@@ -1,0 +1,30 @@
+<suite verbose="1" name="CreatedMeasuresSmoketest"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="abialkevich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="CreatedMeasuresSmoketest" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/Analyzer_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.analyzer.CreatedMeasuresSmoketest" >
+				<methods>
+					<include name="testLogin" />	
+					<include name="createReport" />
+					<include name="addCalculatedMeasure" />
+					<include name="sortCalculatedMeasure" />
+					<include name="verifyCalculatedMemberOnEachChart" />
+					<include name="grandTotal" />
+					<include name="verifyCalculatedMemberOnEachChart2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,25 @@
+<suite verbose="1" name="Scheduling_Smoketest"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="abialkevich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Scheduling_Smoketest" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<classes>
+			<class name="com.pentaho.qa.web.puc.schedules.Scheduling_Smoketest">
+				<methods>
+					<include name="testLogin" />
+					<include name="dlgSchduleItems" />
+					<include name="dlgEdit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,10 @@
+StepId,TestColumn,name,recurrence,calculatedTime,startTimeHours,startTimeMinutes,startTimeFormat,timeZone,endsType,durationEndDays,durationEndHours,durationEndMinutes,durationEndFormat,startDate,recurrencyPattern,recurrencyValues,rangeRecurrencyStart,rangeRecurrency,rangeReccurencyEnd
+T1,blockout_2,Blck2_{generate_uuid},RUN_ONCE,no,05,05,AM,NST,DURATION,5,4,3,nil,2016-07-14,nil,nil,nil,nil,nil
+S3,blockout_3,Blck3_{generate_uuid},DAILY,no,05,05,nil,NST,DURATION,nil,5,6,nil,nil,EVERY,5,2016-07-14,END_BY,2020-07-18
+S4,blockout_4,Blck4_{generate_uuid},WEEKLY,yes,06,06,PM,EAT,END_TIME,nil,06,50,PM,nil,nil,"Sunday,Monday,Tuesday",2016-07-15,END_BY,2020-07-18
+S5,blockout_5,Blck5_{generate_uuid},WEEKLY,no,07,07,PM,EAT,END_TIME,nil,07,07,PM,nil,nil,"Sunday,Monday,Tuesday",2016-07-16,END_BY,2020-07-18
+S6,blockout_6,Blck6_{generate_uuid},MONTHLY,no,08,08,PM,EAT,END_TIME,nil,08,08,PM,nil,DAY,3,2016-07-17,END_BY,2020-07-18
+S7,blockout_7,Blck7_{generate_uuid},MONTHLY,no,11,09,AM,JST,END_TIME,nil,09,09,PM,nil,THE,"last,Monday",2016-07-18,END_BY,2020-07-18
+S8,blockout_8,Blck8_{generate_uuid},YEARLY,no,10,10,PM,JST,END_TIME,nil,10,10,PM,nil,EVERY,"December,4",2016-07-19,END_BY,2020-07-18
+S9,blockout_9,Blck8_{generate_uuid},YEARLY,yes,11,11,PM,EAT,END_TIME,nil,11,11,PM,nil,THE,"first,Sunday,January",2016-07-20,END_BY,2020-07-18
+40235,blockout_10,Schedule_smktest_{generate_uuid},RUN_ONCE,yes,01,02,nil,EAT,DURATION,1,0,0,nil,today,nil,nil,nil,nil,nil

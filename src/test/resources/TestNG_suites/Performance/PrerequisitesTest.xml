@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Performance Testing"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="yury_dziohtseu" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Prerequisites Test"
+		preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.performance.PrerequisitesTest">
+				<methods>
+					<include name="createJDBCConnetion" />
+					<include name="importAnalysis" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

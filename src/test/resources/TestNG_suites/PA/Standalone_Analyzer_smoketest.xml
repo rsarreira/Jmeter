@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Standalone Analyzer smoketest - 5.0"
+    skipfailedinvocationcounts="false" junit="false" parallel="false"
+    data-provider-thread-count="3" annotations="JDK">
+
+    <parameter name="suiteOwner" value="vadim-delendik"/>
+
+    <listeners>
+        <listener
+            class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+    </listeners>
+
+
+    <test verbose="1" name="Standalone Analyzer smoketest" preserve-order="true">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+
+        <classes>
+            <class name="com.pentaho.qa.web.analyzer.Analyzer_StandaloneSmokeTest" />
+        </classes>
+    </test>
+ </suite>
+

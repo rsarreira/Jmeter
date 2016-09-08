@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Sniff test on Dashboard"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="3" annotations="JDK">
+
+	<parameter name="suiteOwner" value="manuel-gutierrez" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Dashboard Sniff test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="{excel_ds_file}" value="CSV_data/PDB_DataProvider.csv" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.dashboard.PDB_SniffTest">
+				<methods>
+					<include name="login" />
+					<include name="createDashboard" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

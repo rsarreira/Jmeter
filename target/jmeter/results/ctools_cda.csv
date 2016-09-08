@@ -1,0 +1,330 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,failureMessage,bytes,grpThreads,allThreads,URL,Latency
+1473176866779,65,731 /pentaho/plugin/cda/api/doQueryWrongPassword,401,Unauthorized,Smoke Tests 1-1,true,,1410,1,1,http://localhost:8080/pentaho/plugin/cda/api/doQuery?path=%2Fpublic%2Fpublic%2Fplugin-samples%2Fcda%2Fcdafiles%2FcompoundJoin.cda&dataAccessId=2,65
+1473176866859,129,/pentaho/j_spring_security_check,200,OK,Smoke Tests 1-1,true,,8599,1,1,http://localhost:8080/pentaho/Login?login_error=1,123
+1473176866991,5,cda\compoundJoin\DoQuery_invalidDataAccessId,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176866998,5,cda\compoundJoin\DoQuery_invalidOutputIndexIdValue,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867004,6,cda\compoundJoin\DoQuery_invalidOutputIndexIdCharacter,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867011,4,cda\compoundJoin\DoQuery_InvalidoutputType,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867016,4,cda\compoundJoin\DoQuery_invalidDate,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867025,4,cda\compoundJoin\DoQuery_invalidStatus,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867033,4,cda\compoundJoin\ListParameters_invalidDataAccessId,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867037,22,cda\compoundJoin\DoQuery_valid,401,"Number of samples in transaction : 4, number of failing samples : 4",Smoke Tests 1-1,false,,5308,1,1,null,0
+1473176867063,11,cda\compoundJoin\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5389,1,1,null,0
+1473176867075,3,cda\compoundJoin\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867078,3,cda\compoundUnion\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867082,2,cda\compoundUnion\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867085,3,cda\compoundUnion\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867089,4,cda\compoundUnion\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867093,7,cda\compoundUnion\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5389,1,1,null,0
+1473176867101,2,cda\DenormalizedMondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867104,3,cda\DenormalizedMondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867108,8,cda\DenormalizedMondrianJdbc\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5403,1,1,null,0
+1473176867116,3,cda\DenormalizedMondrianJndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867119,3,cda\DenormalizedMondrianJndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867123,4,cda\DenormalizedMondrianJndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867128,2,cda\DenormalizedMondrianJndi\listDataAccessTypes,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867130,6,cda\DenormalizedMondrianJndi\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5403,1,1,null,0
+1473176867137,3,cda\Json Scripting\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867140,4,cda\Json Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867144,4,cda\Json Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867149,2,cda\Json Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867152,8,cda\Json Scripting\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5391,1,1,null,0
+1473176867160,3,cda\kettle\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867164,3,cda\kettle\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867167,3,cda\kettle\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867171,6,cda\kettle\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5383,1,1,null,0
+1473176867178,2,cda\MondrianJdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867181,3,cda\MondrianJdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867184,3,cda\MondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867188,3,cda\MondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867191,7,cda\MondrianJdbc\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5390,1,1,null,0
+1473176867198,3,cda\MondrianJndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867201,4,cda\MondrianJndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867205,3,cda\MondrianJndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867209,8,cda\MondrianJndi\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5390,1,1,null,0
+1473176867217,3,cda\Olap4j\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867220,3,cda\Olap4j\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867224,2,cda\Olap4j\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867227,2,cda\Olap4j\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867230,6,cda\Olap4j\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5383,1,1,null,0
+1473176867237,2,cda\SampleIterableSql\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867240,3,cda\SampleIterableSql\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867243,3,cda\SampleIterableSql\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867247,5,cda\SampleIterableSql\ListParameters,401,"Number of samples in transaction : 2, number of failing samples : 2",Smoke Tests 1-1,false,,2654,1,1,null,0
+1473176867253,6,cda\SampleIterableSql\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5396,1,1,null,0
+1473176867260,2,cda\Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867263,3,cda\Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867266,3,cda\Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867269,7,cda\Scripting\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5386,1,1,null,0
+1473176867276,3,cda\sql-jdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867279,3,cda\sql-jdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867282,3,cda\sql-jdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867286,3,cda\sql-jdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867289,7,cda\sql-jdbc\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5385,1,1,null,0
+1473176867296,2,cda\sql-jndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867299,2,cda\sql-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867301,4,cda\sql-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867306,7,cda\sql-jndi\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5385,1,1,null,0
+1473176867313,3,cda\sql-stringArray-jndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867317,2,cda\sql-stringArray-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867320,5,cda\sql-stringArray-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867325,7,cda\sql-stringArray-jndi\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5397,1,1,null,0
+1473176867333,3,cda\sql-stringArray-jndi\DoQuery_invalidDataAccessId,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867336,3,cda\sql-stringArray-jndi\DoQuery_invalidOutputIndexId,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867340,3,cda\sql-stringArray-jndi\DoQuery_InvalidoutputType,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867343,3,cda\xpath\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867346,2,cda\xpath\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867349,3,cda\xpath\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Smoke Tests 1-1,false,,1327,1,1,null,0
+1473176867352,7,cda\xpath\UnwrapQuery_valid,401,"Number of samples in transaction : 3, number of failing samples : 2",Smoke Tests 1-1,false,,5382,1,1,null,0
+1473176867360,14,/pentaho/Logout,200,OK,Smoke Tests 1-1,true,,8720,1,1,http://localhost:8080/pentaho/Login,3
+1473176866648,523,CDA - Smoke Tests,,"Number of samples in transaction : 205, number of failing samples : 75",Smoke Tests 1-1,false,,184509,1,1,null,191
+1473176867385,6,731 /pentaho/plugin/cda/api/doQueryWrongPassword,401,Unauthorized,Performance Tests 2-1,true,,1410,1,1,http://localhost:8080/pentaho/plugin/cda/api/doQuery?path=%2Fpublic%2Fpublic%2Fplugin-samples%2Fcda%2Fcdafiles%2FcompoundJoin.cda&dataAccessId=2,6
+1473176867392,15,/pentaho/j_spring_security_check,200,OK,Performance Tests 2-1,true,,8599,1,1,http://localhost:8080/pentaho/Login?login_error=1,13
+1473176867408,2,cda\compoundJoin\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867411,2,cda\compoundUnion\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867413,3,cda\compoundUnion\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867416,3,cda\compoundUnion\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867420,2,cda\DenormalizedMondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867423,2,cda\DenormalizedMondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867426,2,cda\Json Scripting\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867428,3,cda\Json Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867432,2,cda\Json Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867434,2,cda\Json Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867438,2,cda\kettle\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867440,2,cda\kettle\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867443,3,cda\kettle\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867447,2,cda\metadata\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867450,2,cda\metadata\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867452,3,cda\metadata\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867455,2,cda\MondrianJdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867458,2,cda\MondrianJdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867460,2,cda\MondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867462,2,cda\MondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867465,1,cda\MondrianJndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867467,1,cda\MondrianJndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867469,1,cda\Olap4j\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867471,1,cda\Olap4j\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867473,2,cda\Olap4j\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867476,2,cda\Olap4j\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867478,3,cda\SampleIterableSql\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867481,2,cda\SampleIterableSql\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867483,3,cda\SampleIterableSql\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867486,4,cda\SampleIterableSql\ListParameters,401,"Number of samples in transaction : 2, number of failing samples : 2",Performance Tests 2-1,false,,2654,1,1,null,0
+1473176867491,2,cda\Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867494,2,cda\Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867496,2,cda\Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867499,2,cda\sql-jdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867502,2,cda\sql-jdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867505,2,cda\sql-jdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867508,2,cda\sql-jdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867511,2,cda\sql-jndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867513,2,cda\sql-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867515,2,cda\sql-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867518,2,cda\sql-stringArray-jndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867520,2,cda\sql-stringArray-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867523,2,cda\sql-stringArray-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867526,2,cda\xpath\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867528,3,cda\xpath\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867531,3,cda\xpath\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-1,false,,1327,1,1,null,0
+1473176867534,13,/pentaho/Logout,200,OK,Performance Tests 2-1,true,,8720,1,1,http://localhost:8080/pentaho/Login,2
+1473176867383,133,CDA - Performance Tests,,"Number of samples in transaction : 114, number of failing samples : 46",Performance Tests 2-1,false,,81098,1,1,null,21
+1473176868387,5,731 /pentaho/plugin/cda/api/doQueryWrongPassword,401,Unauthorized,Performance Tests 2-2,true,,1410,1,1,http://localhost:8080/pentaho/plugin/cda/api/doQuery?path=%2Fpublic%2Fpublic%2Fplugin-samples%2Fcda%2Fcdafiles%2FcompoundJoin.cda&dataAccessId=2,5
+1473176868393,12,/pentaho/j_spring_security_check,200,OK,Performance Tests 2-2,true,,8599,1,1,http://localhost:8080/pentaho/Login?login_error=1,9
+1473176868406,2,cda\compoundJoin\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868409,2,cda\compoundUnion\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868411,3,cda\compoundUnion\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868414,2,cda\compoundUnion\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868416,3,cda\DenormalizedMondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868419,3,cda\DenormalizedMondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868422,2,cda\Json Scripting\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868425,2,cda\Json Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868427,2,cda\Json Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868430,2,cda\Json Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868432,2,cda\kettle\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868434,2,cda\kettle\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868437,2,cda\kettle\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868439,2,cda\metadata\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868442,3,cda\metadata\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868445,2,cda\metadata\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868448,2,cda\MondrianJdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868450,2,cda\MondrianJdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868453,2,cda\MondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868455,8,cda\MondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868463,2,cda\MondrianJndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868465,2,cda\MondrianJndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868467,2,cda\Olap4j\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868469,4,cda\Olap4j\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868473,3,cda\Olap4j\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868476,2,cda\Olap4j\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868478,3,cda\SampleIterableSql\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868481,2,cda\SampleIterableSql\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868484,2,cda\SampleIterableSql\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868486,4,cda\SampleIterableSql\ListParameters,401,"Number of samples in transaction : 2, number of failing samples : 2",Performance Tests 2-2,false,,2654,1,1,null,0
+1473176868491,2,cda\Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868494,2,cda\Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868497,2,cda\Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868499,3,cda\sql-jdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868502,2,cda\sql-jdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868505,2,cda\sql-jdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868508,2,cda\sql-jdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868510,3,cda\sql-jndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868513,3,cda\sql-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868516,2,cda\sql-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868519,2,cda\sql-stringArray-jndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868522,3,cda\sql-stringArray-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868525,3,cda\sql-stringArray-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868528,2,cda\xpath\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868531,2,cda\xpath\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868533,3,cda\xpath\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-2,false,,1327,1,1,null,0
+1473176868537,12,/pentaho/Logout,200,OK,Performance Tests 2-2,true,,8720,1,1,http://localhost:8080/pentaho/Login,2
+1473176868385,143,CDA - Performance Tests,,"Number of samples in transaction : 114, number of failing samples : 46",Performance Tests 2-2,false,,81098,1,1,null,16
+1473176869389,5,731 /pentaho/plugin/cda/api/doQueryWrongPassword,401,Unauthorized,Performance Tests 2-3,true,,1410,1,1,http://localhost:8080/pentaho/plugin/cda/api/doQuery?path=%2Fpublic%2Fpublic%2Fplugin-samples%2Fcda%2Fcdafiles%2FcompoundJoin.cda&dataAccessId=2,5
+1473176869394,12,/pentaho/j_spring_security_check,200,OK,Performance Tests 2-3,true,,8599,1,1,http://localhost:8080/pentaho/Login?login_error=1,9
+1473176869407,2,cda\compoundJoin\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869409,2,cda\compoundUnion\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869412,2,cda\compoundUnion\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869414,2,cda\compoundUnion\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869417,2,cda\DenormalizedMondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869420,2,cda\DenormalizedMondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869423,1,cda\Json Scripting\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869425,2,cda\Json Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869427,2,cda\Json Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869430,2,cda\Json Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869432,3,cda\kettle\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869435,2,cda\kettle\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869437,3,cda\kettle\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869441,2,cda\metadata\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869443,3,cda\metadata\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869446,2,cda\metadata\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869449,2,cda\MondrianJdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869451,2,cda\MondrianJdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869453,2,cda\MondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869456,2,cda\MondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869459,2,cda\MondrianJndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869461,3,cda\MondrianJndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869465,2,cda\Olap4j\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869467,2,cda\Olap4j\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869469,2,cda\Olap4j\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869471,2,cda\Olap4j\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869474,2,cda\SampleIterableSql\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869476,2,cda\SampleIterableSql\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869479,2,cda\SampleIterableSql\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869482,4,cda\SampleIterableSql\ListParameters,401,"Number of samples in transaction : 2, number of failing samples : 2",Performance Tests 2-3,false,,2654,1,1,null,0
+1473176869486,2,cda\Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869488,2,cda\Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869491,2,cda\Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869494,2,cda\sql-jdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869496,2,cda\sql-jdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869498,2,cda\sql-jdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869501,1,cda\sql-jdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869503,2,cda\sql-jndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869505,2,cda\sql-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869508,2,cda\sql-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869510,2,cda\sql-stringArray-jndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869513,2,cda\sql-stringArray-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869516,1,cda\sql-stringArray-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869518,1,cda\xpath\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869519,2,cda\xpath\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869521,3,cda\xpath\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-3,false,,1327,1,1,null,0
+1473176869524,13,/pentaho/Logout,200,OK,Performance Tests 2-3,true,,8720,1,1,http://localhost:8080/pentaho/Login,2
+1473176869387,125,CDA - Performance Tests,,"Number of samples in transaction : 114, number of failing samples : 46",Performance Tests 2-3,false,,81098,1,1,null,16
+1473176870394,5,731 /pentaho/plugin/cda/api/doQueryWrongPassword,401,Unauthorized,Performance Tests 2-4,true,,1410,1,1,http://localhost:8080/pentaho/plugin/cda/api/doQuery?path=%2Fpublic%2Fpublic%2Fplugin-samples%2Fcda%2Fcdafiles%2FcompoundJoin.cda&dataAccessId=2,5
+1473176870400,97,/pentaho/j_spring_security_check,200,OK,Performance Tests 2-4,true,,8599,1,1,http://localhost:8080/pentaho/Login?login_error=1,95
+1473176870497,3,cda\compoundJoin\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870500,3,cda\compoundUnion\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870503,2,cda\compoundUnion\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870505,2,cda\compoundUnion\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870508,2,cda\DenormalizedMondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870510,2,cda\DenormalizedMondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870513,2,cda\Json Scripting\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870515,2,cda\Json Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870517,2,cda\Json Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870519,2,cda\Json Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870522,2,cda\kettle\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870524,3,cda\kettle\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870527,3,cda\kettle\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870530,2,cda\metadata\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870533,1,cda\metadata\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870535,2,cda\metadata\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870537,2,cda\MondrianJdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870539,3,cda\MondrianJdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870542,2,cda\MondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870545,2,cda\MondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870547,2,cda\MondrianJndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870549,2,cda\MondrianJndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870551,3,cda\Olap4j\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870554,3,cda\Olap4j\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870557,3,cda\Olap4j\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870560,2,cda\Olap4j\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870563,2,cda\SampleIterableSql\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870565,2,cda\SampleIterableSql\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870567,3,cda\SampleIterableSql\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870570,4,cda\SampleIterableSql\ListParameters,401,"Number of samples in transaction : 2, number of failing samples : 2",Performance Tests 2-4,false,,2654,1,1,null,0
+1473176870575,2,cda\Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870577,2,cda\Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870579,3,cda\Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870582,2,cda\sql-jdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870584,3,cda\sql-jdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870588,2,cda\sql-jdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870591,2,cda\sql-jdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870593,2,cda\sql-jndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870596,2,cda\sql-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870598,2,cda\sql-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870600,2,cda\sql-stringArray-jndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870602,1,cda\sql-stringArray-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870603,3,cda\sql-stringArray-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870606,2,cda\xpath\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870608,2,cda\xpath\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870611,2,cda\xpath\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-4,false,,1327,1,1,null,0
+1473176870613,13,/pentaho/Logout,200,OK,Performance Tests 2-4,true,,8720,1,1,http://localhost:8080/pentaho/Login,3
+1473176870391,219,CDA - Performance Tests,,"Number of samples in transaction : 114, number of failing samples : 46",Performance Tests 2-4,false,,81098,1,1,null,103
+1473176871399,9,731 /pentaho/plugin/cda/api/doQueryWrongPassword,401,Unauthorized,Performance Tests 2-5,true,,1410,1,1,http://localhost:8080/pentaho/plugin/cda/api/doQuery?path=%2Fpublic%2Fpublic%2Fplugin-samples%2Fcda%2Fcdafiles%2FcompoundJoin.cda&dataAccessId=2,9
+1473176871410,25,/pentaho/j_spring_security_check,200,OK,Performance Tests 2-5,true,,8599,1,1,http://localhost:8080/pentaho/Login?login_error=1,20
+1473176871435,3,cda\compoundJoin\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871438,3,cda\compoundUnion\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871442,3,cda\compoundUnion\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871446,3,cda\compoundUnion\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871450,2,cda\DenormalizedMondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871453,2,cda\DenormalizedMondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871455,2,cda\Json Scripting\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871457,2,cda\Json Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871460,2,cda\Json Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871462,2,cda\Json Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871464,2,cda\kettle\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871467,1,cda\kettle\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871469,2,cda\kettle\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871471,2,cda\metadata\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871473,3,cda\metadata\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871476,2,cda\metadata\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871479,11,cda\MondrianJdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871490,3,cda\MondrianJdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871493,2,cda\MondrianJdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871496,2,cda\MondrianJdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871498,2,cda\MondrianJndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871500,1,cda\MondrianJndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871502,2,cda\Olap4j\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871505,1,cda\Olap4j\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871507,2,cda\Olap4j\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871509,2,cda\Olap4j\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871512,2,cda\SampleIterableSql\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871514,2,cda\SampleIterableSql\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871516,2,cda\SampleIterableSql\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871518,4,cda\SampleIterableSql\ListParameters,401,"Number of samples in transaction : 2, number of failing samples : 2",Performance Tests 2-5,false,,2654,1,1,null,0
+1473176871523,3,cda\Scripting\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871526,3,cda\Scripting\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871529,2,cda\Scripting\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871531,2,cda\sql-jdbc\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871533,2,cda\sql-jdbc\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871535,2,cda\sql-jdbc\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871537,2,cda\sql-jdbc\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871539,2,cda\sql-jndi\ListQueries,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871541,3,cda\sql-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871544,3,cda\sql-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871547,2,cda\sql-stringArray-jndi\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871549,2,cda\sql-stringArray-jndi\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871551,2,cda\sql-stringArray-jndi\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871553,2,cda\xpath\PreviewQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871555,2,cda\xpath\DoQuery,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871557,2,cda\xpath\ListParameters,401,"Number of samples in transaction : 1, number of failing samples : 1",Performance Tests 2-5,false,,1327,1,1,null,0
+1473176871560,10,/pentaho/Logout,200,OK,Performance Tests 2-5,true,,8720,1,1,http://localhost:8080/pentaho/Login,2
+1473176871392,154,CDA - Performance Tests,,"Number of samples in transaction : 114, number of failing samples : 46",Performance Tests 2-5,false,,81098,1,1,null,31

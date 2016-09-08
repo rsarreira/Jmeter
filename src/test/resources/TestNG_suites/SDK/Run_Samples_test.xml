@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="PDI SDK" skipfailedinvocationcounts="false"
+	junit="false" parallel="methods" data-provider-thread-count="3"
+	annotations="JDK">
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<parameter name="suiteOwner" value="akupriyanov" />
+
+	<test verbose="1" name="PDI - Run Samples test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<classes>
+			<class name="com.pentaho.qa.sdk.SDKPDIRunSamplesTest" />
+			<methods>
+				<include name="runJobs" />
+				<include name="runTransformations" />
+			</methods>
+		</classes>
+	</test>
+</suite>
+

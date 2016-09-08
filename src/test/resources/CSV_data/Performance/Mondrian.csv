@@ -1,0 +1,3 @@
+TestStepId,TUID,name,filePath,selectAvailable
+TS00001,M01,tpcds_1,src/test/resources/metadata/tpcds_1.mondrian.xml,TRUE
+TS00001,M02,tpcds_10,src/test/resources/metadata/tpcds_10.mondrian.xml,TRUE

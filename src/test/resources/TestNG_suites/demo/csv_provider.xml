@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Pentaho"
+    skipfailedinvocationcounts="false" junit="false" parallel="false"
+    data-provider-thread-count="5" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value=""/>
+
+    <test verbose="1" name="CSV DataProvider demo">
+        <classes>
+            <class name="com.pentaho.qa.demo.CsvTest" />
+        </classes>
+    </test>
+ </suite>
+

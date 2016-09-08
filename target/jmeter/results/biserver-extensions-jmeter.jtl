@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="393" lt="0" ts="1473176439987" s="true" lb="Login" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Standard User Load 1-1" dt="" by="5342" ng="1" na="1">
+  <httpSample t="381" lt="277" ts="1473176440000" s="true" lb="/pentaho/j_spring_security_check" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="5342" ng="1" na="1">
+    <httpSample t="277" lt="277" ts="1473176440000" s="true" lb="http://localhost:8080/pentaho/j_spring_security_check" rc="302" rm="Found" tn="" dt="" by="257" ng="0" na="0"/>
+    <httpSample t="98" lt="98" ts="1473176440283" s="true" lb="http://localhost:8080/pentaho/Home;jsessionid=D366A15882B848578C043D0CC8AA4CDB" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="5085" ng="0" na="0"/>
+  </httpSample>
+</sample>
+<httpSample t="185" lt="185" ts="1473176440647" s="true" lb="GET /authorization/action/isauthorized" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="152" ng="1" na="1"/>
+<httpSample t="226" lt="226" ts="1473176440832" s="true" lb="PUT DirectoryResource" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="65" lt="65" ts="1473176441058" s="true" lb="GET /repo/files/{pathId}/properties" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="697" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="42" lt="42" ts="1473176441317" s="true" lb="PUT /repo/files/deletepermanent" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1473176441360" s="true" lb="GET /repo/files/canAdminister" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="141" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="23" lt="23" ts="1473176441379" s="true" lb="GET /repo/files/canCreate" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="141" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="79" lt="79" ts="1473176441403" s="true" lb="GET /repo/files/children" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="2359" ng="1" na="1">
+  <assertionResult>
+    <name>XPath Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="61" lt="61" ts="1473176441487" s="true" lb="PUT /repo/files/{pathId}/createDir" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="22" lt="22" ts="1473176441548" s="true" lb="GET /repo/files/{pathId}/properties" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="697" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="21" lt="21" ts="1473176441573" s="true" lb="GET /repo/files/:/children" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="2359" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="17" lt="17" ts="1473176441595" s="true" lb="PUT /repo/files/delete" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="29" lt="29" ts="1473176441612" s="true" lb="GET /repo/files/deleted" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="1552" ng="1" na="1">
+  <assertionResult>
+    <name>XPath Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="22" lt="22" ts="1473176441643" s="true" lb="PUT DirectoryResource" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="19" lt="19" ts="1473176441665" s="true" lb="GET /repo/files/{pathId}/children" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="2859" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="10" lt="10" ts="1473176441695" s="true" lb="PUT /repo/files/deletepermanent" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="35" lt="35" ts="1473176441705" s="true" lb="GET /repo/files/generatedContentForSchedule" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="232" ng="1" na="1">
+  <assertionResult>
+    <name>XPath Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="13" lt="13" ts="1473176441742" s="true" lb="GET /repo/files/:/properties" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="636" ng="1" na="1">
+  <assertionResult>
+    <name>XPath Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="12" lt="12" ts="1473176441757" s="true" lb="PUT /repo/files/restore" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="62" lt="62" ts="1473176441770" s="true" lb="PUT /repo/files/{pathId}" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="16" lt="16" ts="1473176441833" s="true" lb="GET /repo/files/{pathId}" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="183" ng="1" na="1"/>
+<httpSample t="30" lt="30" ts="1473176441849" s="true" lb="PUT /repo/files/{pathId}/acl" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="17" lt="16" ts="1473176441880" s="true" lb="GET /repo/files/{pathId}/acl" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="417" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="9" lt="9" ts="1473176441897" s="true" lb="GET /repo/files/{pathId}/canAccess" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="141" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="10" lt="10" ts="1473176441906" s="true" lb="GET /repo/files/{pathId}/canAccessMap" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="264" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="34" lt="34" ts="1473176441917" s="true" lb="GET /repo/files/{pathId}/children" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="820" ng="1" na="1"/>
+<httpSample t="17" lt="17" ts="1473176441953" s="true" lb="PUT /repo/files/{pathId}/children (NO_OVERWRITE)" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="7" lt="7" ts="1473176441971" s="true" lb="PUT /repo/files/{pathId}/children (OVERWRITE)" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="18" lt="18" ts="1473176441979" s="true" lb="GET /repo/files/{pathId}/children (filter)" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="820" ng="1" na="1">
+  <assertionResult>
+    <name>XPath Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" lt="51" ts="1473176441999" s="true" lb="PUT /repo/files/{pathId}/creator" rc="200" rm="OK" tn="Standard User Load 1-1" dt="" by="102" ng="1" na="1"/>
+<httpSample t="33" lt="33" ts="1473176442050" s="true" lb="GET /repo/files/{pathId}/creator" rc="204" rm="No Content" tn="Standard User Load 1-1" dt="text" by="122" ng="1" na="1"/>
+<httpSample t="671" lt="671" ts="1473176442084" s="true" lb="GET /repo/files/{pathId}/download" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="1080" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="18" lt="18" ts="1473176442756" s="true" lb="GET /repo/files/{pathId}/generatedContent" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="232" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="16" lt="16" ts="1473176442775" s="true" lb="GET /repo/files/{pathId}/generatedContentForUser" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="232" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="13" lt="13" ts="1473176442792" s="true" lb="GET /repo/files/{pathId}/inline" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="418" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="118" lt="118" ts="1473176442806" s="true" lb="PUT /repo/files/{pathId}/localeProperties" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="133" ng="1" na="1"/>
+<httpSample t="16" lt="16" ts="1473176442924" s="true" lb="GET /repo/files/{pathId}/localeProperties" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="682" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" lt="51" ts="1473176442941" s="true" lb="PUT /repo/files/{pathId}/deleteLocale" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="133" ng="1" na="1"/>
+<httpSample t="83" lt="83" ts="1473176442992" s="true" lb="GET /repo/files/{pathId}/locales" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="222" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="32" lt="32" ts="1473176443076" s="true" lb="PUT /repo/files/{pathId}/metadata" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="133" ng="1" na="1"/>
+<httpSample t="17" lt="17" ts="1473176443109" s="true" lb="GET /repo/files/{pathId}/metadata" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="378" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="28" lt="28" ts="1473176443127" s="true" lb="GET /repo/files/{pathId}/parameterizable" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="142" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="16" lt="16" ts="1473176443156" s="true" lb="GET /repo/files/{pathId}/properties" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="836" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="98" lt="98" ts="1473176443172" s="true" lb="PUT /repo/files/{pathId}/rename" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="127" ng="1" na="1"/>
+<httpSample t="4495" lt="4468" ts="1473176443270" s="true" lb="GET /repo/files/{pathId}/tree" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="802001" ng="1" na="1">
+  <assertionResult>
+    <name>XPath Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" lt="58" ts="1473176447822" s="true" lb="POST /repo/files/pathsAccessList" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="486" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="15" lt="15" ts="1473176447881" s="true" lb="GET /repo/files/properties" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="636" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="8" lt="8" ts="1473176447897" s="true" lb="GET /repo/files/reservedCharacters" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="152" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="7" lt="7" ts="1473176447906" s="true" lb="GET /repo/files/reservedCharactersDisplay" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="159" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="8041" lt="8014" ts="1473176447914" s="true" lb="GET /repo/files/tree" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="1493865" ng="1" na="1">
+  <assertionResult>
+    <name>XPath Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="130" lt="130" ts="1473176455990" s="true" lb="GET /repos/{contextId}/{resourceId} with plugin resource file id" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="20129" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1728" lt="1728" ts="1473176456121" s="true" lb="POST /repos/{contextId}/{resourceId}" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="192" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="11" lt="11" ts="1473176457850" s="true" lb="GET /repos/{pathId}/default" rc="303" rm="See Other" tn="Standard User Load 1-1" dt="text" by="238" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="19" lt="19" ts="1473176457862" s="true" lb="GET /session/userWorkspaceDir" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="158" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="34" lt="34" ts="1473176457882" s="true" lb="GET /session/workspaceDirForUser" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="158" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="278" lt="278" ts="1473176457917" s="true" lb="GET /userrolelist/allRoles" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="375" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="15" lt="15" ts="1473176458195" s="true" lb="GET /userrolelist/extraRoles" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="343" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="23" lt="23" ts="1473176458211" s="true" lb="GET /userrolelist/getRolesForUser" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="248" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="113" lt="113" ts="1473176458235" s="true" lb="GET /userrolelist/getUsersInRole" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="267" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="38" lt="38" ts="1473176458349" s="true" lb="GET /userrolelist/permission-roles" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="375" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="52" lt="52" ts="1473176458387" s="true" lb="GET /userrolelist/permission-users" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="290" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="15" lt="15" ts="1473176458440" s="true" lb="GET /userrolelist/roles" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="347" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="7" lt="7" ts="1473176458456" s="true" lb="GET /userrolelist/systemRoles" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="291" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="127" lt="127" ts="1473176458464" s="true" lb="GET /userrolelist/users" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="290" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="6" lt="6" ts="1473176458591" s="false" lb="PUT /repo/files/{pathId}" rc="500" rm="Internal Server Error" tn="Standard User Load 1-1" dt="text" by="234" ng="1" na="1"/>
+<httpSample t="23" lt="23" ts="1473176458598" s="true" lb="GET /repo/files/{pathId}/properties" rc="204" rm="No Content" tn="Standard User Load 1-1" dt="text" by="122" ng="1" na="1">
+  <assertionResult>
+    <name>SAXParseException</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Premature end of file.
+See log file for further details.</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="188" lt="188" ts="1473176458625" s="true" lb="POST /scheduler/blockout/add" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="182" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="160" lt="160" ts="1473176458822" s="true" lb="GET /scheduler/blockout/blockoutjobs" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="1270" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="395" lt="395" ts="1473176458983" s="true" lb="POST /scheduler/blockout/blockstatus" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="205" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="20" lt="20" ts="1473176459379" s="true" lb="GET /scheduler/blockout/hasblockouts" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="151" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" lt="53" ts="1473176459400" s="true" lb="GET /scheduler/blockout/shouldFireNow" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="151" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" lt="49" ts="1473176459454" s="true" lb="POST /scheduler/blockout/update" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="182" ng="1" na="1"/>
+<httpSample t="130" lt="130" ts="1473176459505" s="true" lb="POST /scheduler/blockout/willFire" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="151" ng="1" na="1"/>
+<httpSample t="98" lt="98" ts="1473176459636" s="true" lb="DELETE /scheduler/removeJob" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="154" ng="1" na="1"/>
+<httpSample t="5" lt="5" ts="1473176459734" s="true" lb="GET /scheduler/canSchedule" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="151" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="6" lt="6" ts="1473176459739" s="true" lb="GET /scheduler/generatedContentForSchedule" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="232" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="28" lt="0" ts="1473176459746" s="true" lb="GET /scheduler/getContentCleanerJob" rc="204" rm="No Content" tn="Standard User Load 1-1" dt="text" by="122" ng="1" na="1"/>
+<httpSample t="20" lt="20" ts="1473176459774" s="true" lb="GET /scheduler/getJobs" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="7831" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="8" lt="8" ts="1473176459918" s="true" lb="GET /scheduler/isScheduleAllowed" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="151" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="123" lt="123" ts="1473176459927" s="true" lb="POST /scheduler/job" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="175" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="7" lt="7" ts="1473176460055" s="true" lb="GET /scheduler/jobinfo" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="1343" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="8" lt="8" ts="1473176460063" s="true" lb="POST /scheduler/jobState" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="153" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="5" lt="4" ts="1473176460071" s="true" lb="GET /scheduler/state" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="154" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="5" lt="4" ts="1473176460076" s="true" lb="POST /scheduler/pause" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="153" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="5" lt="5" ts="1473176460081" s="true" lb="POST /scheduler/start" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="154" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="27" lt="26" ts="1473176460087" s="true" lb="POST /scheduler/triggerNow" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="153" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="80" lt="80" ts="1473176460115" s="true" lb="POST /scheduler/pauseJob" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="153" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="49" lt="49" ts="1473176460196" s="true" lb="POST /scheduler/resumeJob" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="153" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" lt="56" ts="1473176460246" s="true" lb="DELETE /scheduler/removeJob" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="154" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="33" lt="33" ts="1473176460303" s="true" lb="GET /users" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="267" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2" lt="2" ts="1473176460337" s="true" lb="GET /mantle/isAdministrator" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="151" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="1" lt="1" ts="1473176460340" s="true" lb="GET /mantle/isAuthenticated" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="151" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<sample t="97" lt="0" ts="1473176460342" s="true" lb="Logout" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Standard User Load 1-1" dt="" by="8720" ng="1" na="1">
+  <httpSample t="97" lt="5" ts="1473176460342" s="true" lb="/pentaho/Logout" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="8720" ng="1" na="1">
+    <httpSample t="5" lt="5" ts="1473176460342" s="true" lb="http://localhost:8080/pentaho/Logout" rc="302" rm="Found" tn="" dt="" by="135" ng="0" na="0"/>
+    <httpSample t="9" lt="9" ts="1473176460347" s="true" lb="http://localhost:8080/pentaho/index.jsp" rc="302" rm="Found" tn="Standard User Load 1-1" dt="" by="284" ng="0" na="0"/>
+    <httpSample t="83" lt="83" ts="1473176460356" s="true" lb="http://localhost:8080/pentaho/Login" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="8301" ng="0" na="0"/>
+  </httpSample>
+</sample>
+<httpSample t="5" lt="5" ts="1473176460440" s="true" lb="GET /mantle/isAuthenticated (negative test)" rc="401" rm="Unauthorized" tn="Standard User Load 1-1" dt="text" by="1327" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<sample t="19" lt="0" ts="1473176460446" s="true" lb="Login suzy" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Standard User Load 1-1" dt="" by="314" ng="1" na="1">
+  <httpSample t="19" lt="16" ts="1473176460446" s="true" lb="/pentaho/j_spring_security_check" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="314" ng="1" na="1">
+    <httpSample t="16" lt="16" ts="1473176460446" s="true" lb="http://localhost:8080/pentaho/j_spring_security_check" rc="302" rm="Found" tn="" dt="" by="173" ng="0" na="0"/>
+    <httpSample t="3" lt="3" ts="1473176460462" s="true" lb="http://localhost:8080/pentaho/api/mantle/isAuthenticated" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="141" ng="0" na="0"/>
+  </httpSample>
+</sample>
+<httpSample t="4" lt="4" ts="1473176460466" s="true" lb="GET /mantle/isAdministrator" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="152" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="2" lt="1" ts="1473176460471" s="true" lb="GET /mantle/isAuthenticated" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="151" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<sample t="14" lt="0" ts="1473176460473" s="true" lb="Logout" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Standard User Load 1-1" dt="" by="8720" ng="1" na="1">
+  <httpSample t="14" lt="4" ts="1473176460473" s="true" lb="/pentaho/Logout" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="8720" ng="1" na="1">
+    <httpSample t="4" lt="4" ts="1473176460473" s="true" lb="http://localhost:8080/pentaho/Logout" rc="302" rm="Found" tn="" dt="" by="135" ng="0" na="0"/>
+    <httpSample t="8" lt="8" ts="1473176460477" s="true" lb="http://localhost:8080/pentaho/index.jsp" rc="302" rm="Found" tn="Standard User Load 1-1" dt="" by="284" ng="0" na="0"/>
+    <httpSample t="1" lt="1" ts="1473176460486" s="true" lb="http://localhost:8080/pentaho/Login" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="8301" ng="0" na="0"/>
+  </httpSample>
+</sample>
+<sample t="15" lt="0" ts="1473176460488" s="true" lb="Logout" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Standard User Load 1-1" dt="" by="8720" ng="1" na="1">
+  <httpSample t="15" lt="2" ts="1473176460488" s="true" lb="/pentaho/Logout" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="8720" ng="1" na="1">
+    <httpSample t="2" lt="2" ts="1473176460488" s="true" lb="http://localhost:8080/pentaho/Logout" rc="302" rm="Found" tn="" dt="" by="135" ng="0" na="0"/>
+    <httpSample t="9" lt="9" ts="1473176460491" s="true" lb="http://localhost:8080/pentaho/index.jsp" rc="302" rm="Found" tn="Standard User Load 1-1" dt="" by="284" ng="0" na="0"/>
+    <httpSample t="3" lt="3" ts="1473176460500" s="true" lb="http://localhost:8080/pentaho/Login" rc="200" rm="OK" tn="Standard User Load 1-1" dt="text" by="8301" ng="0" na="0"/>
+  </httpSample>
+</sample>
+
+</testResults>

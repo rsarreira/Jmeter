@@ -1,0 +1,2 @@
+TUID,name,dbType,accessType,host,dbName,port,user,password,filePath,selectAvailable,dataSource
+JDBC01,_tpcds_1_{generate_uuid},PostgreSQL,Native (JDBC),10.177.176.250,tpcds_1,5433,postgres,pentahoqa,src/test/resources/metadata/tpcds_1.mondrian.xml,TRUE,

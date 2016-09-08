@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Pentaho User Console"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK"> 
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+	
+	<parameter name="suiteOwner" value="vadim-delendik"/>	
+
+	<test verbose="1" name="PUC CI test">
+	    <parameter name="user" value="admin"/>
+	    <parameter name="password" value="password"/> 
+	    
+		<classes>
+			<class name="com.pentaho.qa.web.puc.PUC_CI">
+			<methods>
+				<include name="testLogin" />
+ 			</methods>
+			</class>
+		</classes>
+	</test>
+ </suite>
+

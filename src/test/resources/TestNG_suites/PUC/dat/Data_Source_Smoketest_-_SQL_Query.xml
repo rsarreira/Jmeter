@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Data Access Testing"
+    skipfailedinvocationcounts="false" junit="false" parallel="false"
+    data-provider-thread-count="5" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value="pavel_mikhnevich"/>
+
+    <listeners>
+            <listener class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer"/>
+    </listeners>
+  
+    <test verbose="1" name="Data Source Smoketest - SQL Query" preserve-order="true">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+        
+        <parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls"/>
+        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.dat.SQL_Query">
+            <methods>
+                <include name="testLogin" />
+                <include name="testNewHypersonicConnection" />
+                <include name="testNewSQLDataSource" />
+                <include name="testEditSQLDataSource" />
+                <include name="testRemoveDataSource" />
+                <include name="testNewSQLDataSourceCancel" />
+                <include name="testNewFoodmartConnection" />
+                <include name="testNewSQLDataSourceFoodmart" />
+                <include name="testRemoveDataSourceFoodmart" />
+             </methods>
+            </class>
+        </classes>
+    </test>
+ </suite>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Encoding Smoke Test on PIR - 5.1"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="5" annotations="JDK">
+
+	<parameter name="suiteOwner" value="pavel-hrakovich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+
+	<test verbose="1" name="PIR Encoding Smoke test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.pir.PIR_EncodingSmokeTest" />
+		</classes>
+	</test>
+</suite>
+

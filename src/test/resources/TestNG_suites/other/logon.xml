@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="PUC - logon"
+    skipfailedinvocationcounts="false" junit="false" parallel="tests"
+    data-provider-thread-count="1" annotations="JDK"> 
+    
+    <test verbose="1" name="1. Logon - valid credentials">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+        <classes>
+            <class name="com.pentaho.qa.web.puc.PUC_SniffTest" >
+                <methods>
+                    <include name="testLogin" />
+                </methods>
+            </class>            
+        </classes>
+    </test>
+<!-- 
+    <test verbose="1" name="2. Logon - invalid password">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="{generate:8}"/>
+        <parameter name="validCredentials" value="false"/>        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.SniffTest" >
+                <methods>
+                    <include name="testLogin" />
+                </methods>
+            </class>            
+        </classes>
+    </test>
+    
+    <test verbose="1" name="3. Logon - invalid username">
+        <parameter name="user" value="{generate:8}"/>
+        <parameter name="password" value="password"/>
+        <parameter name="validCredentials" value="false"/>        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.SniffTest" >
+                <methods>
+                    <include name="testLogin" />
+                </methods>
+            </class>            
+        </classes>
+    </test>    
+    <test verbose="1" name="4. Logon - empty username">
+        <parameter name="user" value=""/>
+        <parameter name="password" value="password"/>
+        <parameter name="validCredentials" value="false"/>        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.SniffTest">
+                <methods>
+                    <include name="testLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test>        
+    <test verbose="1" name="5. Logon - empty password">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value=""/>
+        <parameter name="validCredentials" value="false"/>        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.SniffTest">
+                <methods>
+                    <include name="testLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test>     -->
+ </suite>

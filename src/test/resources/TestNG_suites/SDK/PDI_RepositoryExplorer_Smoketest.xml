@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="PDI SDK" skipfailedinvocationcounts="false"
+	junit="false" parallel="false" data-provider-thread-count="1"
+	annotations="JDK">
+
+	<parameter name="suiteOwner" value="akupriyanov" />
+
+	<test verbose="1" name="PDI repository Explorer smoketest"
+		preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+
+		<parameter name="SDK_job_file" value="/src/test/resources/SDK_data/generated_job.kjb" />
+		<parameter name="SDK_trans_file" value="/src/test/resources/SDK_data/generated_transformation.ktr" />
+
+		<classes>
+			<class name="com.pentaho.qa.sdk.RepositoryExplorerSmokeTest" />
+			<methods>
+				<include name="precondition" />
+				<include name="saveJobTransformationTest" />
+				<include name="verifyFoldersTest" />
+				<include name="createFolderTest" />
+				<include name="renameFolderTest" />
+				<include name="createFolder2Test" />
+				<include name="renameFolder2Test" />
+				<include name="deleteFolderTest" />
+				<include name="deleteFolder2Test" />
+				<include name="deleteJobTest" />
+				<include name="deleteTransTest" />
+				<include name="restoreFolder" />
+				<include name="restoreTransformation" />
+				<include name="restoreJob" />
+				<include name="permanentlyDeleteFolderTest" />
+				<include name="permanentlyDeleteTransTest" />
+				<include name="permanentlyDeleteJobTest" />
+				<include name="moveJobTest" />
+				<include name="moveJobsNegativeTest" />
+				<include name="moveTransTest" />
+				<include name="moveTransNegativeTest" />
+				<include name="moveFolderTest" />
+				<include name="moveFolderNegativeTest" />
+				<include name="renameUserHomeTest" />
+				<include name="deleteUserHomeTest" />
+				<include name="saveJobTransformationRootTest" />
+			</methods>
+		</classes>
+	</test>
+</suite>
+

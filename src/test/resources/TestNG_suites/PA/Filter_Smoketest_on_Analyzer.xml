@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Filter Smoketest on Analyzer - 5.0"
+	skipfailedinvocationcounts="false" junit="false" parallel="methods"
+	data-provider-thread-count="3" annotations="JDK">
+
+	<parameter name="suiteOwner" value="yury_dziohtseu" />
+	<parameter name="DS_name" value="CSV_{generate_uuid}" />
+	<parameter name="Report_name" value="analyzerReport_{generate_uuid}" />
+	
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Filter Smoketest on Analyzer" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/Analyzer_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.analyzer.Analyzer_FilterSmoketest">
+				<methods>
+					<include name="verifyFilterPageOptions" />
+					<include name="currentYearFilter" />
+					<include name="previousYearFilter" />
+					<include name="nextYearFilter" />
+					<include name="previousXYearsFilter" />
+					<include name="nextXYearsFilter" />
+					<include name="xYearsAgoFilter" />
+					<include name="xYearsAheadFilter" />
+					<include name="combineFilters" />
+					<include name="verifyListOption" />
+					<include name="filterFieldTest" />
+					<include name="listAndRangeFilterOptionsYears" />
+					<include name="listAndRangeFilterOptions" />
+					<include name="verifySelectRangeOption" />
+					<include name="verifyCustomerFieldFilterPage" />
+					<include name="containsSubstringFieldTest" />	
+					<include name="notContainsSubstringFieldTest" />
+					<include name="addAnotherValueTest" />		
+					<include name="typeFieldFilterTest" />
+					<include name="quartersFieldFilterTest" />		
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

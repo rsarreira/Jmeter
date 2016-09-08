@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Sniff test on PUC - 5.0"
+    skipfailedinvocationcounts="false" junit="false" parallel="false"
+    data-provider-thread-count="1" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value="vadim-delendik"/>
+
+    <listeners>
+            <listener class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer"/>
+    </listeners>
+  
+    
+    <test verbose="1" name="Sniff test" preserve-order="true">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+        
+        <parameter name="reportCountryPeformance" value="Country Performance (heat grid)"/>
+        <parameter name="reportPath" value="Public/Steel Wheels/{L10N:SalesTrend_multi-chart}"/>
+        <parameter name="prptReportPath" value="Public/Steel Wheels/Buyer Report (sparkline report)"/>
+        <parameter name="parameterName" value="Line"/>
+        <parameter name="parameterValue" value="Ships"/>
+        <parameter name="analysisReportPath" value="New_Folder_{generate_uuid}/Country Performance (heat grid)"/>
+        <parameter name="drillthroughValue" value="QTR3"/>
+        <parameter name="scheduleName" value="schedule_{generate_uuid}"/>
+        <parameter name="folderName" value="Public/Steel Wheels"/>
+        <parameter name="createFolderName" value="New_Folder_{generate_uuid}"/>
+        <parameter name="renameFolderName" value="New_Folder_{generate_uuid}_renamed"/>
+        
+        <parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls"/>
+        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.PUC_SniffTest" />
+        </classes>
+    </test>
+ </suite>
+

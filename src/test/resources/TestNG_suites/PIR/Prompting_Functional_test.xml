@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Prompting Functional test"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="yury_dziohtseu" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Prompting Functional test" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.pir.PIR_PromptingFunctionalTest">
+				<methods>
+					<include name="login" />
+					<include name="prepareTest" />
+					<include name="addTerritoryPrompt" />
+					<include name="addProductLinePrompt" />
+					<include name="multipleSelection" />
+					<include name="addCustomerNamePrompt" />
+					<include name="testCheckboxOption" />
+					<include name="testButtonOption" />
+					<include name="testSpecifyBox" />
+					<include name="testDeleteCustomerNamePrompt" />
+					<include name="testDeleteProductLinePrompt" />		
+					<include name="testEditProductLinePrompt" />	
+					<include name="testCloseSaveReopen" />				
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

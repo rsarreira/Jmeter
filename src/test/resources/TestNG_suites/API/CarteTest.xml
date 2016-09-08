@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="API"
+    skipfailedinvocationcounts="false" junit="false" parallel="false"
+    data-provider-thread-count="1" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value="akupriyanov"/>    
+
+    <test verbose="1" name="Carte API tests">
+        <parameter name="user" value="cluster"/>
+        <parameter name="password" value="cluster"/>
+    
+        <classes>
+            <class name="com.pentaho.qa.api.CarteTest"/>
+            <methods>
+                <include name="rootTest" />
+                <include name="statusTest" />
+                <include name="getSlavesTest" />
+                <include name="nextSequenceTest" />
+                <include name="listSocketTest" />
+                <include name="registerSlaveTest" />
+                <include name="allocateSocketTest" />
+                <include name="stopCarteTest" />
+                
+                <include name="addTransTest" />
+                <include name="sniffStepTest" />
+                <include name="transImageTest" />
+                <include name="transStatusTest" />
+                <include name="prepareExecTest" />
+                <include name="startExecTest" />
+                <include name="startTransTest" />
+                <include name="runTransTest" />
+                <include name="executeTransTest" />
+                <include name="pauseTransTest" />
+                <include name="stopTransTest" />
+                <include name="cleanupTransTest" />
+                <include name="removeTransTest" />
+                
+                <include name="addJobTest" />
+                <include name="jobImageTest" />
+                <include name="jobStatusTest" />
+                <include name="runJobTest" />
+                <include name="executeJobTest" />
+                <include name="startJobTest" />
+                <include name="stopJobTest" />
+                <include name="removeJobTest" />
+            </methods>
+        </classes>
+    </test>
+ </suite>
+

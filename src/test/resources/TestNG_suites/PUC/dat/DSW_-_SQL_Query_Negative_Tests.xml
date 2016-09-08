@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Data Access Testing"
+    skipfailedinvocationcounts="false" junit="false" parallel="tests"
+    data-provider-thread-count="2" annotations="JDK"> 
+
+    <parameter name="suiteOwner" value="pavel_mikhnevich"/>
+
+    <listeners>
+            <listener class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer"/>
+    </listeners>
+  
+    <test verbose="1" name="DSW - SQL Query Negative Tests" preserve-order="true">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+
+        <parameter name="suzy_user" value="suzy"/>
+        <parameter name="suzy_password" value="password"/>
+
+        
+        <parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls"/>
+        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.dat.SQL_Query_Negative_Test">
+             <methods>
+                <include name="testSuzyUserPermissions" />
+                <include name="adminLogin" />
+                <include name="testInvalidSQLDataSourceCreation" />
+             </methods>
+            </class>
+        </classes>
+    </test>
+ </suite>
+

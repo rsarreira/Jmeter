@@ -1,0 +1,2 @@
+TUID,Title,location,Name
+PDB01,Dashboard,/home/admin,dashboard_sniff_{generate_uuid}

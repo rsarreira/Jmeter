@@ -1,0 +1,30 @@
+<suite verbose="1" name="Column_Sizes"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="abialkevich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Column_Sizes" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/Analyzer_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.analyzer.Column_Sizes">
+				<methods>
+					<include name="testLogin" />	
+					<include name="createAnalyzerReport" />
+					<include name="exprotFileInPDF" />
+					<include name="resetColumnSizes" />
+					<include name="exceedsLongestValue" />
+					<include name="exprotFileInPDF2" />
+					<include name="returnToDefaultWidths" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

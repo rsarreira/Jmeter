@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Data Access Testing"
+	skipfailedinvocationcounts="false" junit="false" parallel="tests"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="pavel_mikhnevich" />
+
+	<listeners>
+		<listener class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="DSW - DB Tables - Joins by keys with non-matching names" preserve-order="true" >
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+	    <parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.puc.dat.DB_Tables_NonMatching_Joins">
+				<methods>
+					<include name="login" />
+					<include name="createSampleData_alterConnection" />
+					<include name="createDBTablesDataSourceWithInvalidJoin" />
+					<include name="createAnalyzerReport" />
+					<include name="exportDBTablesDataSourceWithInvalidJoin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

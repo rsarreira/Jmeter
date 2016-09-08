@@ -1,0 +1,32 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,failureMessage,bytes,grpThreads,allThreads,URL,Latency
+1473176846221,93,Add ExportTrans,404,Not Found,Standard User Load 1-1,false,,1201,1,1,http://localhost:8080/kettle/addExport/?load=dummy_trans.ktr&type=trans,93
+1473176846322,14,Add ExportJob,404,Not Found,Standard User Load 1-1,false,,1201,1,1,http://localhost:8080/kettle/addExport/?load=dummy_job.kjb&type=job,14
+1473176846337,12,AddJobServlet,404,Not Found,Standard User Load 1-1,false,,1195,1,1,http://localhost:8080/kettle/addJob/?xml=Y,12
+1473176846350,9,AddTransServlet,404,Not Found,Standard User Load 1-1,false,,1199,1,1,http://localhost:8080/kettle/addTrans/?xml=Y,9
+1473176846360,3,AllocateServerSocketServlet,404,Not Found,Standard User Load 1-1,false,,1211,1,1,http://localhost:8080/kettle/allocateSocket/?xml=Y&rangeStart=100&host=locahost&id=clust&trans=my_trans&sourceSlave=slave_1&sourceStep=200&sourceCopy=1&targetSlave=slave_2&targetStep=50&targetCopy=1,3
+1473176846364,3,ExecuteTransServlet,404,Not Found,Standard User Load 1-1,false,,1207,1,1,http://localhost:8080/kettle/executeTrans/?user=admin&pass=password&trans=home%2fadmin%2fdummy-trans&level=Debug&rep=di,3
+1473176846368,0,ExecuteTransServlet2,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in query at index 76: http://localhost:8080/kettle/executeTrans/?user=admin&pass=password&trans=D:\performance/src/test/resources/jmeter_data/dummy_trans.ktr&level=Debug,Standard User Load 1-1,false,,1063,1,1,http://localhost:8080/kettle/executeTrans/?user=admin&pass=password&trans=D:\performance/src/test/resources/jmeter_data/dummy_trans.ktr&level=Debug,0
+1473176846369,0,ExecuteJobServlet,Non HTTP response code: java.net.URISyntaxException,Non HTTP response message: Illegal character in query at index 72: http://localhost:8080/kettle/executeJob/?user=admin&pass=password&job=D:\performance/src/test/resources/jmeter_data/dummy_job.kjb&level=Debug,Standard User Load 1-1,false,,1057,1,1,http://localhost:8080/kettle/executeJob/?user=admin&pass=password&job=D:\performance/src/test/resources/jmeter_data/dummy_job.kjb&level=Debug,0
+1473176846370,2,GetSlavesServlet,404,Not Found,Standard User Load 1-1,false,,1199,1,1,http://localhost:8080/kettle/getSlaves,2
+1473176846373,3,GetJobImageServlet,404,Not Found,Standard User Load 1-1,false,,1197,1,1,http://localhost:8080/kettle/jobImage?name=dummy_job,3
+1473176846376,3,GetJobStatusServlet,404,Not Found,Standard User Load 1-1,false,,1201,1,1,http://localhost:8080/kettle/jobStatus/?name=dummy_job&xml=Y,3
+1473176846380,4,ListServerSocketServlet,404,Not Found,Standard User Load 1-1,false,,1203,1,1,http://localhost:8080/kettle/listSocket/?host=127.0.0.1,4
+1473176846385,3,NextSequenceValueServlet,404,Not Found,Standard User Load 1-1,false,,1205,1,1,http://localhost:8080/kettle/nextSequence?name=test_seq,3
+1473176846389,4,PauseTransServlet,404,Not Found,Standard User Load 1-1,false,,1203,1,1,http://localhost:8080/kettle/pauseTrans/?name=dummy-trans&xml=Y,4
+1473176846394,4,CleanupTransServlet,404,Not Found,Standard User Load 1-1,false,,1207,1,1,http://localhost:8080/kettle/cleanupTrans/?name=dummy-trans&xml=Y,4
+1473176846399,7,RegisterSlaveServlet,404,Not Found,Standard User Load 1-1,false,,1209,1,1,http://localhost:8080/kettle/registerSlave/,7
+1473176846407,4,RemoveJobServlet,404,Not Found,Standard User Load 1-1,false,,1201,1,1,http://localhost:8080/kettle/removeJob/?name=dummy_job&xml=Y,4
+1473176846411,4,RemoveTransServlet,404,Not Found,Standard User Load 1-1,false,,1205,1,1,http://localhost:8080/kettle/removeTrans/?name=dummy-trans&xml=Y,4
+1473176846416,3,PrepareExecutionTransServlet,404,Not Found,Standard User Load 1-1,false,,1205,1,1,http://localhost:8080/kettle/prepareExec/?name=dummy-trans&xml=Y,3
+1473176846420,4,StartExecutionTransServlet,404,Not Found,Standard User Load 1-1,false,,1201,1,1,http://localhost:8080/kettle/startExec/?name=dummy-trans&xml=Y,4
+1473176846425,4,StartJobServlet,404,Not Found,Standard User Load 1-1,false,,1199,1,1,http://localhost:8080/kettle/startJob/?name=dummy_job&xml=Y,4
+1473176846430,4,StartTransServlet,404,Not Found,Standard User Load 1-1,false,,1203,1,1,http://localhost:8080/kettle/startTrans/?name=dummy-trans&xml=Y,4
+1473176846434,5,StopJobServlet,404,Not Found,Standard User Load 1-1,false,,1197,1,1,http://localhost:8080/kettle/stopJob/?name=dummy_job&xml=Y,5
+1473176846440,3,StopTransServlet,404,Not Found,Standard User Load 1-1,false,,1201,1,1,http://localhost:8080/kettle/stopTrans/?name=dummy-trans&xml=Y,3
+1473176846444,3,GetTransImageServlet,404,Not Found,Standard User Load 1-1,false,,1201,1,1,http://localhost:8080/kettle/transImage?name=dummy-trans,3
+1473176846447,4,GetTransStatusServlet,404,Not Found,Standard User Load 1-1,false,,1205,1,1,http://localhost:8080/kettle/transStatus/?name=dummy-trans&xml=Y,4
+1473176846452,4,GetStatusServlet,404,Not Found,Standard User Load 1-1,false,,1195,1,1,http://localhost:8080/kettle/status/?xml=Y,4
+1473176846456,3,RunJobServlet,404,Not Found,Standard User Load 1-1,false,,1193,1,1,http://localhost:8080/kettle/runJob?job=home%2Fadmin%2Fdummy_job&level=Debug,2
+1473176846459,2,RunTransServlet,404,Not Found,Standard User Load 1-1,false,,1197,1,1,http://localhost:8080/kettle/runTrans?trans=home%2Fadmin%2Fdummy-trans&level=Debug,2
+1473176846461,15,GetRootServlet,200,OK,Standard User Load 1-1,true,,579,1,1,http://localhost:8080/,15
+1473176846479,2,SniffStepServlet,404,Not Found,Standard User Load 1-1,false,,1199,1,1,http://localhost:8080/kettle/sniffStep?trans=dummy-trans&step=Dummy%20(do%20nothing)&xml=Y,2

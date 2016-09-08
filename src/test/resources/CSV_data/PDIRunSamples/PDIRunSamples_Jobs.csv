@@ -1,0 +1,22 @@
+Execute,TUID,SpiraID,JobPath,ExpectedText,Jira,Comment
+y,1,TS065147,arguments/Set arguments on a transformation.kjb,Set arguments on a transformation - Finished job entry [Run transformation.ktr] (result=[true]),,
+y,2,TS065148,arguments2/pass_arguments.kjb,pass_arguments - Finished job entry [Write back passed arguments] (result=[true]),,
+y,3,TS065149,changelog/Process changelog.kjb,Process changelog - Finished job entry [General - Change log processing 2] (result=[true]),,
+y,4,TS065150,evaluate-result-rows/Evaluate result rows.kjb,Evaluate result rows - Finished job entry [DUMMY 1] (result=[true]),,
+y,5,TS065153,parallel synchronized jobs/SyncJobs.kjb,"SyncJobs - Finished job entry [Wait for file ""Job1Ready.tmp""] (result=[true])",,
+y,6,TS065151,parallel synchronized jobs/SyncJobs Example1.kjb,"SyncJobs Example1 - Finished job entry [Create file  ""Job1Ready.tmp""] (result=[true])",,
+y,7,TS065152,parallel synchronized jobs/SyncJobs Example2.kjb,"SyncJobs Example2 - Finished job entry [Create file  ""Job2Ready.tmp""] (result=[true])",,
+y,8,TS065154,process all tables/Process all tables.kjb,Process all tables - Finished job entry [save list of all result files] (result=[true]),PDI-14480,
+y,9,TS065155,process flow with adding streams/process flow step 1 - start.kjb,process flow step 1 - start - Finished job entry [process flow step 3 - output.ktr] (result=[true]),,
+y,10,TS065156,shell for every row/shell for every row.kjb,shell for every row - Finished job entry [shelltest.cmd] (result=[true]),PDI-14478,
+y,11,TS065157,Slowly Changing Dimension/create - populate - update slowly changing dimension.kjb,create  populate  update slowly changing dimension - Finished job entry [Update] (result=[true]),,
+y,12,TS065158,changelog-groups/Process changelog with temp table.kjb,Process changelog with temp table - Finished job entry [process per group] (result=[true]),,
+y,13,TS065159,run_all/Run all sample transformations.kjb,Run all sample transformations - Finished job entry [Launch transformations] (result=[true]),BACKLOG-5361,
+y,14,TS065160,../transformations/dynamic-table/Dynamic table creation and population.kjb,"Sampledata.CUSTOMERS.0 - Finished processing (I=0, O=100, R=100, W=100, U=0, E=0)",,
+n,15,,hadoop/emr_job.kjb,,,Do not run it: BigData configuration required
+n,16,,hadoop/Hadoop Job Executor adv.kjb,,,Do not run it: BigData configuration required
+n,17,,hadoop/Hadoop Job Executor simple.kjb,,,Do not run it: BigData configuration required
+n,18,,hadoop/Pentaho MapReduce - weblogs.kjb,,,Do not run it: BigData configuration required
+n,19,,hadoop/Pentaho MapReduce - wordcount.kjb,,,Do not run it: BigData configuration required
+n,20,,hadoop/Pig Script Executor tutorial local.kjb,,,Do not run it: BigData configuration required
+n,21,,hadoop/Pig Script Executor tutorial.kjb,,,Do not run it: BigData configuration required

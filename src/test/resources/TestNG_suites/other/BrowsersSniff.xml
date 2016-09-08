@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="BrowsersSniff"
+       skipfailedinvocationcounts="false" junit="false" parallel="false"
+       data-provider-thread-count="5" annotations="JDK">
+    
+    <parameter name="suiteOwner" value="ichekan"/>
+
+    <test verbose="1" name="TBD" preserve-order="true">
+        <parameter name="user" value="admin"/>
+        <parameter name="password" value="password"/>
+        <parameter name="reportName" value="test_01"/>
+        <parameter name="fieldDrag_01" value="Territory"/>
+        <parameter name="fieldDropTo_01" value="Rows"/>
+        <parameter name="dataSourceName" value="SteelWheels: SteelWheelsSales"/>
+        
+        <parameter name="{excel_ds_uid}" value="Browser"/>
+        <parameter name="{excel_ds_args}" value="Browser;Version;Selenium"/>
+        <parameter name="{excel_ds_file}" value="XLS_data/browsers_sniff.xls"/>
+        <parameter name="{excel_ds_sheet}" value="browsers"/> 
+        
+        <classes>
+            <class name="com.pentaho.qa.web.puc.BrowsersSniff">
+            <methods>
+                <include name="testBrowser" />
+            </methods>
+            </class>
+        </classes>
+    </test>
+ </suite>
+

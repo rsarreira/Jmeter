@@ -1,0 +1,288 @@
+TestMethod,TUID,Positive,user,password,expectedCode,expectedBody,Name,reportPath,requestBody
+jobState,1,TRUE,admin,password,200,NORMAL,schedule1,,
+jobState,2,FALSE,pat,password,401,This request requires HTTP authentication,schedule1,,
+jobState,3,TRUE,suzy,password,200,NORMAL,schedule2,,
+jobState,4,TRUE,tiffany,password,200,NORMAL,schedule3,,
+jobState,5,FALSE,joe,password,401,This request requires HTTP authentication,,,
+jobState,6,FALSE,admin,password1,401,This request requires HTTP authentication,schedule1,,
+canSchedule,1,TRUE,admin,password,200,TRUE,,,
+canSchedule,2,TRUE,pat,password,200,FALSE,,,
+canSchedule,3,TRUE,suzy,password,200,TRUE,,,
+canSchedule,4,TRUE,tiffany,password,200,TRUE,,,
+canSchedule,5,FALSE,joe,password,401,This request requires HTTP authentication,,,
+canSchedule,6,FALSE,admin,password1,401,This request requires HTTP authentication,,,
+isScheduleAllowed,1,TRUE,admin,password,200,TRUE,,public:Steel%20Wheels:Top%20Customers%20(report).prpt,
+isScheduleAllowed,2,TRUE,pat,password,200,FALSE,,public:Steel%20Wheels:Top%20Customers%20(report).prpt,
+isScheduleAllowed,3,TRUE,suzy,password,200,TRUE,,public:Steel%20Wheels:Top%20Customers%20(report).prpt,
+isScheduleAllowed,4,TRUE,tiffany,password,200,TRUE,,public:Steel%20Wheels:Top%20Customers%20(report).prpt,
+isScheduleAllowed,5,FALSE,joe,password,401,This request requires HTTP authentication,,public:Steel%20Wheels:Top%20Customers%20(report).prpt,
+isScheduleAllowed,6,FALSE,admin,password1,401,This request requires HTTP authentication,,public:Steel%20Wheels:Top%20Customers%20(report).prpt,
+getJobs,1,TRUE,admin,password,200,,schedule1,,
+getJobs,2,TRUE,pat,password,200,,,,
+getJobs,3,TRUE,suzy,password,200,,schedule2,,
+getJobs,4,TRUE,tiffany,password,200,,schedule3,,
+getJobs,5,FALSE,joe,password,401,This request requires HTTP authentication,,,
+getJobs,6,FALSE,admin,password1,401,This request requires HTTP authentication,,,
+jobInfo,1,TRUE,admin,password,200,,schedule1,,
+jobInfo,2,FALSE,pat,password,500,Sorry. We really did try.,schedule1,,
+jobInfo,3,TRUE,suzy,password,200,,schedule2,,
+jobInfo,4,TRUE,tiffany,password,200,,schedule3,,
+jobInfo,5,FALSE,joe,password,401,This request requires HTTP authentication,schedule1,,
+jobInfo,6,FALSE,admin,password1,401,This request requires HTTP authentication,schedule1,,
+state,1,TRUE,admin,password,200,RUNNING,,,
+state,2,TRUE,pat,password,200,RUNNING,,,
+state,3,TRUE,suzy,password,200,RUNNING,,,
+state,4,TRUE,tiffany,password,200,RUNNING,,,
+state,5,FALSE,joe,password,401,This request requires HTTP authentication,,,
+state,6,FALSE,admin,password1,401,This request requires HTTP authentication,,,
+pause_start,1,TRUE,admin,password,200;200;200;200,PAUSED;PAUSED;RUNNING;RUNNING,,,
+pause_start,2,TRUE,pat,password,200;200;200;200,RUNNING;RUNNING;RUNNING;RUNNING,,,
+pause_start,3,TRUE,suzy,password,200;200;200;200,PAUSED;PAUSED;RUNNING;RUNNING,,,
+pause_start,4,TRUE,tiffany,password,200;200;200;200,PAUSED;PAUSED;RUNNING;RUNNING,,,
+pause_start,5,FALSE,joe,password,401;200;401;200,This request requires HTTP authentication;RUNNING;This request requires HTTP authentication;RUNNING,,,
+pause_start,6,FALSE,admin,password1,401;200;401;200,This request requires HTTP authentication;RUNNING;This request requires HTTP authentication;RUNNING,,,
+shutdown_start,1,TRUE,admin,password,200;200;200;200,PAUSED;PAUSED;RUNNING;RUNNING,,,
+shutdown_start,2,TRUE,pat,password,200;200;200;200,RUNNING;RUNNING;RUNNING;RUNNING,,,
+shutdown_start,3,TRUE,suzy,password,200;200;200;200,PAUSED;PAUSED;RUNNING;RUNNING,,,
+shutdown_start,4,TRUE,tiffany,password,200;200;200;200,PAUSED;PAUSED;RUNNING;RUNNING,,,
+shutdown_start,5,FALSE,joe,password,401;200;401;200,This request requires HTTP authentication;RUNNING;This request requires HTTP authentication;RUNNING,,,
+shutdown_start,6,FALSE,admin,password1,401;200;401;200,This request requires HTTP authentication;RUNNING;This request requires HTTP authentication;RUNNING,,,
+pauseJob,1,TRUE,admin,password,200;200;200;200,PAUSED;PAUSED;NORMAL;NORMAL,schedule1,,
+pauseJob,2,TRUE,pat,password,200;200;200;200,NORMAL;NORMAL;NORMAL;NORMAL,schedule1,,
+pauseJob,3,TRUE,suzy,password,200;200;200;200,PAUSED;PAUSED;NORMAL;NORMAL,schedule2,,
+pauseJob,4,TRUE,tiffany,password,200;200;200;200,PAUSED;PAUSED;NORMAL;NORMAL,schedule3,,
+pauseJob,5,FALSE,joe,password,401;200;401;200,This request requires HTTP authentication;NORMAL;This request requires HTTP authentication;NORMAL,schedule1,,
+pauseJob,6,FALSE,admin,password1,401;200;401;200,This request requires HTTP authentication;NORMAL;This request requires HTTP authentication;NORMAL,schedule1,,
+triggerNow,1,TRUE,admin,password,200,NORMAL,schedule1,,
+triggerNow,2,TRUE,pat,password,200,NORMAL,schedule1,,
+triggerNow,3,TRUE,suzy,password,200,NORMAL,schedule2,,
+triggerNow,4,TRUE,tiffany,password,200,NORMAL,schedule3,,
+triggerNow,5,FALSE,joe,password,401,This request requires HTTP authentication,schedule1,,
+triggerNow,6,FALSE,admin,password1,401,This request requires HTTP authentication,schedule1,,
+removeJob,2,TRUE,pat,password,200,NORMAL,schedule1,,
+removeJob,1,TRUE,admin,password,200,REMOVED,schedule1,,
+removeJob,3,TRUE,suzy,password,200,REMOVED,schedule2,,
+removeJob,4,TRUE,tiffany,password,200,REMOVED,schedule3,,
+removeJob,5,FALSE,joe,password,401,This request requires HTTP authentication,schedule1,,
+removeJob,6,FALSE,admin,password1,401,This request requires HTTP authentication,schedule1,,
+jobs,P1,TRUE,admin,password,200,,schedule1,,"<jobScheduleRequest>
+<jobName>test_report_by_admin_{generate_uuid}</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/admin</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,P1,TRUE,suzy,password,200,,schedule2,,"<jobScheduleRequest>
+<jobName>test_report_by_suzy_{generate_uuid}</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/suzy</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,P1,TRUE,tiffany,password,200,,schedule3,,"<jobScheduleRequest>
+<jobName>test_report_by_tiffany_{generate_uuid}</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/tiffany</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,TRUE,admin,password,200,,jobTest01,,"<jobScheduleRequest>
+<jobName>test_report_by_admin_{generate_uuid}_jobTest01</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/admin</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,FALSE,pat,password,401,This request requires HTTP authentication,jobTest02,,"<jobScheduleRequest>
+<jobName>test_report_by_pat_{generate_uuid}_jobTest03</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/pat</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,TRUE,suzy,password,200,,jobTest03,,"<jobScheduleRequest>
+<jobName>test_report_by_suzy_{generate_uuid}_jobTest03</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/suzy</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,TRUE,tiffany,password,200,,jobTest04,,"<jobScheduleRequest>
+<jobName>test_report_by_tiffany_{generate_uuid}_jobTest04</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/tiffany</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,FALSE,joe,password,401,This request requires HTTP authentication,jobTest05,,"<jobScheduleRequest>
+<jobName>test_report_by_joe_{generate_uuid}_jobTest05</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/joe</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,FALSE,admin,password1,401,This request requires HTTP authentication,jobTest06,,"<jobScheduleRequest>
+<jobName>test_report_by_admin_{generate_uuid}_jobTest06</jobName>
+<simpleJobTrigger>
+<uiPassParam>MINUTES</uiPassParam>
+<repeatInterval>1800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2014-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/admin</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,TRUE,admin,password,200,,jobTest07_once,,"<jobScheduleRequest>
+<jobName>test_report_by_admin_{generate_uuid}_jobTest07</jobName>
+<simpleJobTrigger>
+<uiPassParam>RUN_ONCE</uiPassParam>
+<repeatInterval>0</repeatInterval>
+<repeatCount>0</repeatCount>
+<startTime>2018-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/admin</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,TRUE,admin,password,200,,jobTest08_sec,,"<jobScheduleRequest>
+<jobName>test_report_by_admin_{generate_uuid}_jobTest08</jobName>
+<simpleJobTrigger>
+<uiPassParam>SECONDS</uiPassParam>
+<repeatInterval>200</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2018-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/admin</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,TRUE,admin,password,200,,jobTest09_hour,,"<jobScheduleRequest>
+<jobName>test_report_by_admin_{generate_uuid}_jobTest09</jobName>
+<simpleJobTrigger>
+<uiPassParam>HOURS</uiPassParam>
+<repeatInterval>3600</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2018-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/admin</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"
+jobs,S1,TRUE,admin,password,200,,jobTest10_day,,"<jobScheduleRequest>
+<jobName>test_report_by_admin_{generate_uuid}_jobTest10</jobName>
+<simpleJobTrigger>
+<uiPassParam>DAILY</uiPassParam>
+<repeatInterval>102800</repeatInterval>
+<repeatCount>-1</repeatCount>
+<startTime>2018-08-14T11:46:00.000-04:00</startTime>
+<endTime />
+</simpleJobTrigger>
+<inputFile>/public/Steel Wheels/Top Customers (report).prpt</inputFile>
+<outputFile>/home/admin</outputFile>
+<jobParameters>
+<name>ParameterName</name>
+<type>string</type>
+<stringValue>false</stringValue>
+</jobParameters>
+</jobScheduleRequest>"

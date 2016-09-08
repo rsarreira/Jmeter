@@ -1,0 +1,31 @@
+<suite verbose="1" name="SizeByNegativeMeasuresInCharts"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="abialkevich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="SizeByNegativeMeasuresInCharts"
+		preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/Analyzer_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.analyzer.SizeByNegativeMeasuresInCharts">
+				<methods>
+					<include name="testLogin" />
+					<include name="createReport" />
+					<include name="addCalculatedMeasure" />
+					<include name="applyAbsoluteNegativeOption" />
+					<include name="verifyAbsoluteOptionInXML" />
+					<include name="applySmallestNegativeOption" />
+					<include name="verifySmallestOptionInXML" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Data Source Smoketest"
+	skipfailedinvocationcounts="false" junit="false" parallel="methods"
+	data-provider-thread-count="4" annotations="JDK">
+
+	<parameter name="suiteOwner" value="yury_dziohtseu" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Data Source Smoketest" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/PIR_DataProvider.xls" />
+
+		<classes>
+			<class name="com.pentaho.qa.web.pir.PIR_DataSourceSmoketest">
+				<methods>  
+					<include name="buttonsCheck" />
+					<include name="selectSystemDS" />					
+					<include name="selectUserDS" />					
+					<include name="dataSourceMultipleSelection" />
+					<include name="dataSourceDoubleClick" />
+					<include name="createPIRReportOK" />
+					<include name="createPIRReportCancel" />
+					<include name="createSQLDataSource" />
+					<include name="createCSVDataSource" />
+					<include name="createDBTableDataSource" />
+					<include name="editDataSource" />	
+					<include name="deleteDataSource" />	
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,26 @@
+<suite verbose="1" name="TabBehaviorEncoding"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="abialkevich" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Tab_Behavior_Encoding" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/Analyzer_DataProvider.xls" />
+		<classes>
+			<class name="com.pentaho.qa.web.analyzer.TabBehaviorEncoding">
+				<methods>
+					<include name="testLogin" />	
+					<include name="openReportAnalyzerInNewWindow" />
+					<include name="generateXMLFile" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

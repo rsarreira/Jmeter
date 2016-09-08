@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Browse Perspective - Security Test"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK"> 
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+	
+	<parameter name="suiteOwner" value="ben-freed"/>
+
+	<test verbose="1" name="PUC Browse Security Test">
+	    <parameter name="user" value="admin"/>
+	    <parameter name="password" value="password"/> 
+	    <parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls" />
+	    
+		<classes>
+			<class name="com.pentaho.qa.web.puc.PUC_BrowsePerspective_SecurityTest">
+			<methods>
+				<include name="verifyCreateNewFolderIsNotAllowed" />
+				<include name="verifyCopyAndPasteReportIsNotAllowed" />
+ 			</methods>
+			</class>
+		</classes>
+	</test>
+ </suite>
+

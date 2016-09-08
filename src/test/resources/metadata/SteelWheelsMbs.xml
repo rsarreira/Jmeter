@@ -1,0 +1,109 @@
+<Schema name="SteelWheelsMbs">
+  <Cube name="SteelWheelsSales" cache="true" enabled="true">
+    <Table name="ORDERFACT">
+    </Table>
+    <Dimension foreignKey="CUSTOMERNUMBER" highCardinality="false" name="Markets">
+      <Hierarchy hasAll="true" allMemberName="All Markets" primaryKey="CUSTOMERNUMBER">
+        <Table name="CUSTOMER_W_TER">
+        </Table>
+        <Level name="Territory" column="TERRITORY" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Country" column="COUNTRY" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="State Province" column="STATE" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="City" column="CITY" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension foreignKey="CUSTOMERNUMBER" highCardinality="false" name="Customers">
+      <Hierarchy hasAll="true" allMemberName="All Customers" primaryKey="CUSTOMERNUMBER">
+        <Table name="CUSTOMER_W_TER">
+        </Table>
+        <Level name="Customer" column="CUSTOMERNAME" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+          <Property name="Customer Number" column="CUSTOMERNUMBER" type="Numeric">
+          </Property>
+          <Property name="Contact First Name" column="CONTACTFIRSTNAME" type="String">
+          </Property>
+          <Property name="Contact Last Name" column="CONTACTLASTNAME" type="String">
+          </Property>
+          <Property name="Phone" column="PHONE" type="String">
+          </Property>
+          <Property name="Address" column="ADDRESSLINE1" type="String">
+          </Property>
+          <Property name="Credit Limit" column="CREDITLIMIT" type="Numeric">
+          </Property>
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension foreignKey="PRODUCTCODE" highCardinality="false" name="Product">
+      <Hierarchy hasAll="true" allMemberName="All Products" primaryKey="PRODUCTCODE">
+        <Table name="PRODUCTS">
+        </Table>
+        <Level name="Line" table="PRODUCTS" column="PRODUCTLINE" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Vendor" table="PRODUCTS" column="PRODUCTVENDOR" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Product" table="PRODUCTS" column="PRODUCTNAME" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+          <Property name="Code" column="PRODUCTCODE" type="String">
+          </Property>
+          <Property name="Vendor" column="PRODUCTVENDOR" type="String">
+          </Property>
+          <Property name="Description" column="PRODUCTDESCRIPTION" type="String">
+          </Property>
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="TimeDimension" foreignKey="TIME_ID" highCardinality="false" name="Time">
+      <Hierarchy hasAll="true" allMemberName="All Years" primaryKey="TIME_ID">
+        <Table name="DIM_TIME">
+        </Table>
+        <Level name="Years" column="YEAR_ID" type="String" uniqueMembers="true" levelType="TimeYears" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy]]]>
+            </Annotation>
+          </Annotations>
+        </Level>
+        <Level name="Quarters" column="QTR_NAME" ordinalColumn="QTR_ID" type="String" uniqueMembers="false" levelType="TimeQuarters" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy].['QTR'q]]]>
+            </Annotation>
+          </Annotations>
+        </Level>
+        <Level name="Months" column="MONTH_NAME" ordinalColumn="MONTH_ID" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+          <Annotations>
+            <Annotation name="AnalyzerDateFormat">
+              <![CDATA[[yyyy].['QTR'q].[MMM]]]>
+            </Annotation>
+          </Annotations>
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension foreignKey="STATUS" highCardinality="false" name="Order Status">
+      <Hierarchy hasAll="true" allMemberName="All Status Types" primaryKey="STATUS">
+        <Level name="Type" column="STATUS" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Quantity" column="QUANTITYORDERED" formatString="#,###" aggregator="sum">
+      <Annotations>
+        <Annotation name="AnalyzerBusinessGroup">
+          <![CDATA[Numbers]]>
+        </Annotation>
+      </Annotations>
+    </Measure>
+    <Measure name="Sales" column="TOTALPRICE" formatString="#,###" aggregator="sum">
+      <Annotations>
+        <Annotation name="AnalyzerBusinessGroup">
+          <![CDATA[Numbers]]>
+        </Annotation>
+      </Annotations>
+    </Measure>
+    <CalculatedMember name="Sales YTD" formatString="" formula="Aggregate(YTD(),[Measures].[Sales])" dimension="Measures" visible="true">
+      <CalculatedMemberProperty name="SOLVE_ORDER" value="-300">
+      </CalculatedMemberProperty>
+    </CalculatedMember>
+  </Cube>
+</Schema>

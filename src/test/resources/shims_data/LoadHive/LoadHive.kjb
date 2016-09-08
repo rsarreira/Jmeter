@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>load_hive</name>
+    <description/>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2012&#x2f;05&#x2f;01 17&#x3a;24&#x3a;34.675</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2012&#x2f;05&#x2f;01 17&#x3a;24&#x3a;34.675</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>hive</name>
+    <server>&#x24;&#x7b;hive2_hostname&#x7d;</server>
+    <type>HIVE2</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;hive2_db&#x7d;</database>
+    <port>&#x24;&#x7b;hive2_port&#x7d;</port>
+    <username>&#x24;&#x7b;hive2_user&#x7d;</username>
+    <password>&#x24;&#x7b;hive2_password&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;hive2_port&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>hiveKerberos</name>
+    <server>&#x24;&#x7b;hive2_hostname&#x7d;</server>
+    <type>HIVE2</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;hive2_db&#x7d;</database>
+    <port>&#x24;&#x7b;hive2_port&#x7d;</port>
+    <username>&#x24;&#x7b;hive2_user&#x7d;</username>
+    <password>&#x24;&#x7b;hive2_password&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_HIVE2.&#x24;&#x7b;hive2_option&#x7d;</code><attribute>&#x24;&#x7b;hive2_principal&#x7d;</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;hive2_port&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+         <slaveserver><name>aaaa - bad-hdp22unsec-cent-n1.pentaho.dmz&#x3a;55557</name><hostname>bad-hdp22unsec-cent-n1.pentaho.dmz</hostname><port>55557</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - bad-hdp22unsec-cent-n3.pentaho.dmz&#x3a;55556</name><hostname>bad-hdp22unsec-cent-n3.pentaho.dmz</hostname><port>55556</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>pentaho-di</name><hostname>localhost</hostname><port>9080</port><webAppName>pentaho-di</webAppName><username>admin</username><password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - sandbox.hortonworks.com&#x3a;55558</name><hostname>sandbox.hortonworks.com</hostname><port>55558</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - sandbox.hortonworks.com&#x3a;55557</name><hostname>sandbox.hortonworks.com</hostname><port>55557</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>Master</name><hostname>localhost</hostname><port>9997</port><webAppName/><username>cluster</username><password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>DI</name><hostname>localhost</hostname><port>9081</port><webAppName>pentaho-di</webAppName><username>admin</username><password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>winlocal</name><hostname>192.168.56.1</hostname><port>9999</port><webAppName/><username>cluster</username><password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>DI4.8.3.4</name><hostname>localhost</hostname><port>9082</port><webAppName>pentaho-di</webAppName><username>joe</username><password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - sandbox.hortonworks.com&#x3a;55556</name><hostname>sandbox.hortonworks.com</hostname><port>55556</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>Slave2</name><hostname>localhost</hostname><port>9999</port><webAppName/><username>cluster</username><password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>Slave1</name><hostname>localhost</hostname><port>9998</port><webAppName/><username>cluster</username><password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>10000</name><hostname>localhost</hostname><port>10000</port><webAppName/><username>cluster</username><password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - bad-hdp21sec-cent-sl2.pentaho.com&#x3a;55557</name><hostname>bad-hdp21sec-cent-sl2.pentaho.com</hostname><port>55557</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - bad-hdp21sec-cent-nn.pentaho.com&#x3a;55556</name><hostname>bad-hdp21sec-cent-nn.pentaho.com</hostname><port>55556</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - bad-hdp21sec-cent-mn.pentaho.com&#x3a;55557</name><hostname>bad-hdp21sec-cent-mn.pentaho.com</hostname><port>55557</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - bad-hdp21sec-cent-jt.pentaho.com&#x3a;55556</name><hostname>bad-hdp21sec-cent-jt.pentaho.com</hostname><port>55556</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa &#x3a;55556</name><hostname>EPBYMINW3556T11</hostname><port>55556</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - bad-hdp21sec-cent-sl1.pentaho.com&#x3a;55556</name><hostname>bad-hdp21sec-cent-sl1.pentaho.com</hostname><port>55556</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - bad-hdp21sec-cent-nn.pentaho.com&#x3a;55558</name><hostname>bad-hdp21sec-cent-nn.pentaho.com</hostname><port>55558</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - EPBYMINW3556T11&#x3a;55558</name><hostname>EPBYMINW3556T11</hostname><port>55558</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa</name><hostname>EPBYMINW3556T11</hostname><port>55557</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa &#x3a;55558</name><hostname>EPBYMINW3556T11</hostname><port>55558</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>di_server</name><hostname>localhost</hostname><port>9080</port><webAppName>pentaho-di</webAppName><username>admin</username><password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - epbyminw3529t21.minsk.epam.com&#x3a;55557</name><hostname>epbyminw3529t21.minsk.epam.com</hostname><port>55557</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>aaaa - epbyminw3529t21.minsk.epam.com&#x3a;55556</name><hostname>epbyminw3529t21.minsk.epam.com</hostname><port>55556</port><webAppName/><username>bpass</username><password>Encrypted 2be98afc86aa7f2e4cb79ce72ce93bcc9</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>Y</master><sslMode>N</sslMode></slaveserver>
+         <slaveserver><name>DI server</name><hostname>localhost</hostname><port>9080</port><webAppName>pentaho-di</webAppName><username>admin</username><password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password><proxy_hostname/><proxy_port/><non_proxy_hosts/><master>N</master><sslMode>N</sslMode></slaveserver>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<checkpoint-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<max_nr_retries/>
+<run_retry_period/>
+<namespace_parameter/>
+<save_parameters/>
+<save_result_rows/>
+<save_result_files/>
+<field><id>ID_JOB_RUN</id><enabled>Y</enabled><name>ID_JOB_RUN</name></field><field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>NAMESPACE</id><enabled>Y</enabled><name>NAMESPACE</name></field><field><id>CHECKPOINT_NAME</id><enabled>Y</enabled><name>CHECKPOINT_NAME</name></field><field><id>CHECKPOINT_COPYNR</id><enabled>Y</enabled><name>CHECKPOINT_COPYNR</name></field><field><id>ATTEMPT_NR</id><enabled>Y</enabled><name>ATTEMPT_NR</name></field><field><id>JOB_RUN_START_DATE</id><enabled>Y</enabled><name>JOB_RUN_START_DATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>RESULT_XML</id><enabled>Y</enabled><name>RESULT_XML</name></field><field><id>PARAMETER_XML</id><enabled>Y</enabled><name>PARAMETER_XML</name></field></checkpoint-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>27</xloc>
+      <yloc>61</yloc>
+      </entry>
+    <entry>
+      <name>Hadoop Copy Files</name>
+      <description/>
+      <type>HadoopCopyFilesPlugin</type>
+      <copy_empty_folders>Y</copy_empty_folders>
+      <arg_from_previous>N</arg_from_previous>
+      <overwrite_files>Y</overwrite_files>
+      <include_subfolders>N</include_subfolders>
+      <remove_source_files>N</remove_source_files>
+      <add_result_filesname>N</add_result_filesname>
+      <destination_is_a_file>N</destination_is_a_file>
+      <create_destination_folder>Y</create_destination_folder>
+      <fields>
+        <field>
+          <source_filefolder>&#x24;&#x7b;hdfsUrl&#x7d;&#x24;&#x7b;hdfsWorkDir&#x7d;&#x2f;weblogs&#x2f;parse&#x24;&#x7b;file.separator&#x7d;weblogs_parse.txt</source_filefolder>
+          <source_configuration_name>STATIC-SOURCE-FILE-0</source_configuration_name>
+          <destination_filefolder>&#x24;&#x7b;hdfsUrl&#x7d;&#x24;&#x7b;hdfsWorkDir&#x7d;&#x2f;hive&#x2f;</destination_filefolder>
+          <destination_configuration_name>STATIC-DEST-FILE-0</destination_configuration_name>
+          <wildcard/>
+        </field>
+      </fields>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>299</xloc>
+      <yloc>62</yloc>
+      </entry>
+    <entry>
+      <name>Success</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>1037</xloc>
+      <yloc>17</yloc>
+      </entry>
+    <entry>
+      <name>FailBehavior</name>
+      <description/>
+      <type>JOB</type>
+      <specification_method>filename</specification_method>
+      <job_object_id/>
+      <filename>&#x24;&#x7b;SHIMS_DATA&#x7d;&#x24;&#x7b;file.separator&#x7d;Common&#x24;&#x7b;file.separator&#x7d;FailBehavior.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <expand_remote_job>N</expand_remote_job>
+      <create_parent_folder>N</create_parent_folder>
+      <pass_export>N</pass_export>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>1003</xloc>
+      <yloc>95</yloc>
+      </entry>
+    <entry>
+      <name>SQL</name>
+      <description/>
+      <type>SQL</type>
+      <sql>drop table if exists &#x24;&#x7b;hive2_tablename&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;create table &#x24;&#x7b;hive2_tablename&#x7d; &#x28;&#xd;&#xa;client_ip    string,&#xd;&#xa;full_request_date string,&#xd;&#xa;day    string,&#xd;&#xa;month    string,&#xd;&#xa;month_num int,&#xd;&#xa;year    string,&#xd;&#xa;hour    string,&#xd;&#xa;minute    string,&#xd;&#xa;second    string,&#xd;&#xa;timezone    string,&#xd;&#xa;http_verb    string,&#xd;&#xa;uri    string,&#xd;&#xa;http_status_code    string,&#xd;&#xa;bytes_returned        string,&#xd;&#xa;referrer        string,&#xd;&#xa;user_agent    string&#x29;&#xd;&#xa;row format delimited&#xd;&#xa;fields terminated by &#x27;&#x5c;t&#x27;&#xd;&#xa;stored as textfile&#x3b;&#xd;&#xa;load data inpath &#x27;&#x24;&#x7b;hdfsWorkDir&#x7d;&#x2f;hive&#x2f;weblogs_parse.txt&#x27;&#xd;&#xa;overwrite into table &#x24;&#x7b;hive2_tablename&#x7d;&#x3b;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename>&#x24;&#x7b;SHIMS_DATA&#x7d;&#x24;&#x7b;file.separator&#x7d;LoadHive&#x24;&#x7b;file.separator&#x7d;weblogsDDL.sql</sqlfilename>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>589</xloc>
+      <yloc>125</yloc>
+      </entry>
+    <entry>
+      <name>Is secured cluster&#x3f;</name>
+      <description/>
+      <type>SIMPLE_EVAL</type>
+      <valuetype>variable</valuetype>
+      <fieldname/>
+      <variablename>&#x24;&#x7b;secure_cluster&#x7d;</variablename>
+      <fieldtype>string</fieldtype>
+      <mask/>
+      <comparevalue>true</comparevalue>
+      <minvalue/>
+      <maxvalue/>
+      <successcondition>equal</successcondition>
+      <successnumbercondition>equal</successnumbercondition>
+      <successbooleancondition>false</successbooleancondition>
+      <successwhenvarset>N</successwhenvarset>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>436</xloc>
+      <yloc>62</yloc>
+      </entry>
+    <entry>
+      <name>SQL 2</name>
+      <description/>
+      <type>SQL</type>
+      <sql>drop table if exists &#x24;&#x7b;hive2_tablename&#x7d;&#x3b;&#xa;&#xa;create table &#x24;&#x7b;hive2_tablename&#x7d; &#x28;&#xa;client_ip    string,&#xa;full_request_date string,&#xa;day    string,&#xa;month    string,&#xa;month_num int,&#xa;year    string,&#xa;hour    string,&#xa;minute    string,&#xa;second    string,&#xa;timezone    string,&#xa;http_verb    string,&#xa;uri    string,&#xa;http_status_code    string,&#xa;bytes_returned        string,&#xa;referrer        string,&#xa;user_agent    string&#x29;&#xa;row format delimited&#xa;fields terminated by &#x27;&#x5c;t&#x27;&#xa;stored as textfile&#x3b;&#xa;&#xa;load data inpath &#x27;&#x24;&#x7b;hdfsWorkDir&#x7d;&#x2f;hive&#x2f;weblogs_parse.txt&#x27;&#xa;overwrite into table &#x24;&#x7b;hive2_tablename&#x7d;&#x3b;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename>&#x24;&#x7b;SHIMS_DATA&#x7d;&#x24;&#x7b;file.separator&#x7d;LoadHive&#x24;&#x7b;file.separator&#x7d;weblogsDDL.sql</sqlfilename>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>hiveKerberos</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>588</xloc>
+      <yloc>18</yloc>
+      </entry>
+    <entry>
+      <name>Evaluate rows number in a table</name>
+      <description/>
+      <type>EVAL_TABLE_CONTENT</type>
+      <connection>hive</connection>
+      <schemaname/>
+      <tablename>weblogs</tablename>
+      <success_condition>rows_count_greater</success_condition>
+      <limit>10</limit>
+      <is_custom_sql>Y</is_custom_sql>
+      <is_usevars>Y</is_usevars>
+      <custom_sql>SELECT &#x2a;&#xd;&#xa;FROM &#x24;&#x7b;hive2_tablename&#x7d;&#xd;&#xa;LIMIT 20</custom_sql>
+      <add_rows_result>N</add_rows_result>
+      <clear_result_rows>Y</clear_result_rows>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>750</xloc>
+      <yloc>155</yloc>
+      </entry>
+    <entry>
+      <name>Evaluate rows number in a table 2</name>
+      <description/>
+      <type>EVAL_TABLE_CONTENT</type>
+      <connection>hiveKerberos</connection>
+      <schemaname/>
+      <tablename>weblogs</tablename>
+      <success_condition>rows_count_greater</success_condition>
+      <limit>10</limit>
+      <is_custom_sql>Y</is_custom_sql>
+      <is_usevars>Y</is_usevars>
+      <custom_sql>SELECT &#x2a;&#xd;&#xa;FROM &#x24;&#x7b;hive2_tablename&#x7d;&#xd;&#xa;LIMIT 20</custom_sql>
+      <add_rows_result>N</add_rows_result>
+      <clear_result_rows>Y</clear_result_rows>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>730</xloc>
+      <yloc>13</yloc>
+      </entry>
+    <entry>
+      <name>chmod777</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;SHIMS_DATA&#x7d;&#x24;&#x7b;file.separator&#x7d;Common&#x24;&#x7b;file.separator&#x7d;setChmod.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>215</xloc>
+      <yloc>132</yloc>
+      </entry>
+    <entry>
+      <name>UseChmod777&#x3f;</name>
+      <description/>
+      <type>SIMPLE_EVAL</type>
+      <valuetype>variable</valuetype>
+      <fieldname/>
+      <variablename>useChmod777</variablename>
+      <fieldtype>boolean</fieldtype>
+      <mask/>
+      <comparevalue/>
+      <minvalue/>
+      <maxvalue/>
+      <successcondition>equal</successcondition>
+      <successnumbercondition>equal</successnumbercondition>
+      <successbooleancondition>true</successbooleancondition>
+      <successwhenvarset>N</successwhenvarset>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>181</xloc>
+      <yloc>65</yloc>
+      </entry>
+    <entry>
+      <name>SetVariables</name>
+      <description/>
+      <type>JOB</type>
+      <specification_method>filename</specification_method>
+      <job_object_id/>
+      <filename>&#x24;&#x7b;SHIMS_DATA&#x7d;&#x24;&#x7b;file.separator&#x7d;Common&#x5c;SetVariables.kjb</filename>
+      <jobname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Nothing</loglevel>
+      <slave_server_name/>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <expand_remote_job>N</expand_remote_job>
+      <create_parent_folder>N</create_parent_folder>
+      <pass_export>N</pass_export>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <set_append_logfile>N</set_append_logfile>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>106</xloc>
+      <yloc>73</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>Hadoop Copy Files</from>
+      <to>Is secured cluster&#x3f;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Is secured cluster&#x3f;</from>
+      <to>SQL 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Is secured cluster&#x3f;</from>
+      <to>SQL</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>SQL</from>
+      <to>Evaluate rows number in a table</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Evaluate rows number in a table</from>
+      <to>Success</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Evaluate rows number in a table</from>
+      <to>FailBehavior</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>SQL 2</from>
+      <to>Evaluate rows number in a table 2</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Evaluate rows number in a table 2</from>
+      <to>Success</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Evaluate rows number in a table 2</from>
+      <to>FailBehavior</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>chmod777</from>
+      <to>Hadoop Copy Files</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>UseChmod777&#x3f;</from>
+      <to>chmod777</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>UseChmod777&#x3f;</from>
+      <to>Hadoop Copy Files</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>SQL</from>
+      <to>FailBehavior</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>SQL 2</from>
+      <to>FailBehavior</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>N</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>SetVariables</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>SetVariables</from>
+      <to>UseChmod777&#x3f;</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+
+</job>

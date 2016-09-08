@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Browse Perspective Encoding"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="1" annotations="JDK">
+
+	<parameter name="suiteOwner" value="yury_dziohtseu" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Browse Perspective Encoding" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		<parameter name="{excel_ds_file}" value="XLS_data/PUC_DataProvider.xls" />
+		<parameter name="newReportName" value="%name_{generate_uuid}_"/>
+
+		<classes>
+			<class name="com.pentaho.qa.web.puc.PUC_BrowsePerspectiveEncoding">
+				<methods>
+					<include name="addIllegalFolder" />
+					<include name="addCorrectFolder" />
+					<include name="renameFolder" />	
+					<include name="renameFile" />
+					<include name="addNewUser" />	
+					<include name="newUserLogin" />
+					<include name="renameReport" />			
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

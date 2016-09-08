@@ -1,0 +1,56 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Analyzer UI Smoketest"
+	skipfailedinvocationcounts="false" junit="false" parallel="false"
+	data-provider-thread-count="3" annotations="JDK">
+
+	<parameter name="suiteOwner" value="michael-lazo" />
+
+	<listeners>
+		<listener
+			class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+	</listeners>
+
+	<test verbose="1" name="Analyzer UI Smoketest" preserve-order="true">
+		<parameter name="user" value="admin" />
+		<parameter name="password" value="password" />
+		
+		<parameter name="{excel_ds_file}" value="XLS_data/Analyzer_DataProvider.xls" />
+		
+		<classes>
+		<class name="com.pentaho.qa.web.analyzer.Analyzer_UI_Smoketest">
+			<methods>
+				<include name="login" />
+				<include name="createNewReport" />
+				<include name="checkLayoutPanel" />
+				<include name="checkFilterPanel" />
+				<include name="verifyReportOptionsBtn" />
+				<include name="verifyCategoryView" />
+				<include name="verifyMeasureLevelTimeView" />
+				<include name="verifyAlphabeticalView" />
+				<include name="verifySchemaView" />
+				<include name="showHiddenFields" />
+				<include name="verifyMoreActionsMenu" />
+				<include name="verifyChartList" />
+				<include name="resizeBrowser" />
+				<include name="increasePanelSize" />
+				<include name="decreaseLayoutPanelSize" />
+				<include name="decreaseFieldsPanelSize" />
+				<include name="preservePanels" />
+				<include name="verifyCloseWithoutSaving" />
+				<include name="createCsvDataSource" />
+				<include name="verifyAddFieldRefresh" />
+				<include name="verifyCategoryAccordion" />
+				<include name="searchFields" />
+				<include name="hoverOverAvailableFields" />
+				<include name="verifyTooltips" />
+				<include name="verifyAvailableFieldsReorder" />
+				<include name="verifyAlignmentFilterHeightAndBgColor" />
+				<include name="verifyChartTooltips" />
+				<include name="verifyGemBarDropIndicators" />
+				<include name="verifyEditFieldDialog" />
+			</methods>
+		</class>
+	</classes>
+	</test>
+</suite>

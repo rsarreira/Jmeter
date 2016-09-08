@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="1" name="Shim PUC test"
+       skipfailedinvocationcounts="false" junit="false" parallel="false"
+       data-provider-thread-count="1" annotations="JDK">
+
+  <parameter name="suiteOwner" value="ichekan"/>
+
+  <listeners>
+    <listener
+        class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer" />
+  </listeners>
+
+
+  <test verbose="1" name="Shim PUC test" preserve-order="true">
+    <parameter name="user" value="admin"/>
+    <parameter name="password" value="password"/>
+
+    <parameter name="{excel_ds_file}" value="XLS_data/Shims_DataProvider.xls"/>
+
+    <classes>
+      <class name="com.pentaho.qa.web.shims.ShimsPUCTest" />
+    </classes>
+  </test>
+</suite>

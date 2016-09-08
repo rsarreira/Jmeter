@@ -1,0 +1,26 @@
+TestMethod,user,password,expectedCode,expectedBody,sequenceName,requestBody,startPort,host,clusterId,transName,sourceSlave,sourceStep,sourceCopy,targetSlave,targetStep,targetCopy,URL,Comments
+root,cluster,cluster,200,"<HTML><HEAD><TITLE>Kettle slave server</TITLE><META http-equiv=""Content-Type"" content=""text/html; charset=UTF-8""></HEAD><BODY><H2>Slave server menu</H2><p><a href=""/kettle/status"">Show status</a><br><p></BODY></HTML>",,,,,,,,,,,,,,"<HTML><HEAD><TITLE>Kettle slave server status</TITLE><META http-equiv=""Content-Type"" content=""text/html; charset=UTF-8""></HEAD><BODY><H1>Status</H1><table border=""1""><tr> <th>Transformation name</th> <th>Carte Object ID</th> <th>Status</th> <th>Last log date</th> <th>Remove from list</th> </tr><tr><td><a href=""/kettle/transStatus?name=Row+generator+test&id=2e8c7e84-3c64-40b2-97a1-4acae644ea35"">Row generator test</a></td><td>2e8c7e84-3c64-40b2-97a1-4acae644ea35</td><td>Waiting</td><td>-</td><td><a href=""/kettle/removeTrans?name=Row+generator+test&id=2e8c7e84-3c64-40b2-97a1-4acae644ea35""> Remove </a></td></tr></table><p><table border=""1""><tr> <th>Job name</th> <th>Carte Object ID</th> <th>Status</th> <th>Last log date</th> <th>Remove from list</th> </tr></table><p><H1>Configuration details:</H1><p><table border=""1""><tr> <th>Parameter</th> <th>Value</th> </tr><tr> <td>The maximum size of the central log buffer </td> <td>0 lines (No limit)</td> </tr><tr> <td>The maximum age of a log line</td> <td>0 minutes (No limit)</td> </tr><tr> <td>The maximum age of a stale object</td> <td>0 minutes (No limit)</td> </tr><tr> <td>Repository name</td> <td></td> </tr></table><i>These parameters can be set in the slave server configuration XML file: (Using defaults)</i><br></BODY></HTML>
+ "
+status,cluster,cluster,200,"<HTML><HEAD><TITLE>Kettle slave server status</TITLE><META http-equiv=""Content-Type"" content=""text/html; charset=UTF-8""></HEAD><BODY><H1>PDI Status</H1><table border=""1""><tr> <th>Transformation name</th> <th>Carte Object ID</th> <th>Status</th> <th>Last log date</th> <th>Remove from list</th> </tr>",,,,,,,,,,,,,,
+getSlaves,cluster,cluster,200,"<?xml version=""1.0"" encoding=""UTF-8""?><SlaveServerDetections></SlaveServerDetections>",,,,,,,,,,,,,,
+nextSeq,cluster,cluster,200,</value><increment>10000</increment></seq>,test_seq,,,,,,,,,,,,,
+listSocket,cluster,cluster,200,<HTML><HEAD><TITLE>List of server sockets on server '127.0.0.1'</TITLE></HEAD><BODY><H1>Ports for host '127.0.0.1'</H1>No port allocations found for host '127.0.0.1',,,,127.0.0.1,,,,,,,,,,
+registerSlave,cluster,cluster,200,"<?xml version=""1.0"" encoding=""UTF-8""?><webresult>  <result>OK</result>  <message>Slave server detection &#x27;Dynamic slave &#x5b;localhost&#x3a;901&#x5d;&#x27; was replaced in the list.</message>  <id/></webresult>",,"<SlaveServerDetection>
+<slaveserver>
+<name>Dynamic slave &#x5b;localhost&#x3a;901&#x5d;</name>
+<hostname>localhost</hostname>
+<port>901</port>
+<webAppName/>
+<username>cluster</username>
+<password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+<proxy_hostname/>
+<proxy_port/>
+<non_proxy_hosts/>
+<master>N</master>
+</slaveserver>
+<active>Y</active>
+<last_active_date/>
+<last_inactive_date/>
+</SlaveServerDetection>",,,,,,,,,,,,
+allocateSocket,cluster,cluster,200,"<?xml version=""1.0"" encoding=""UTF-8""?><port>100</port>",,,100,localhost,cluster,trans1,slave1,200,1,slave2,50,1,,
+stopCarte,cluster,cluster,200,<HTML><HEAD><TITLE>Shutdown of Carte requested</TITLE></HEAD><BODY><H1>Status</H1><p>Shutting Down</p></BODY></HTML>,,,,,,,,,,,,,http://localhost:9000,
