@@ -437,11 +437,11 @@
                 <hashTree>
                   <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseCode" enabled="true">
                     <collectionProp name="Asserion.test_strings">
-                      <stringProp name="52470">501</stringProp>
+                      <stringProp name="49586">200</stringProp>
                     </collectionProp>
                     <stringProp name="TestPlan.comments">baaa</stringProp>
                     <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-                    <boolProp name="Assertion.assume_success">true</boolProp>
+                    <boolProp name="Assertion.assume_success">false</boolProp>
                     <intProp name="Assertion.test_type">2</intProp>
                     <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                   </ResponseAssertion>
@@ -455,6 +455,13 @@
                     <intProp name="Assertion.test_type">16</intProp>
                     <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                   </ResponseAssertion>
+                  <hashTree/>
+                  <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="script"> if (prev.getResponseCode() == &quot;501&quot;) { prev.setResponseOK(); }</stringProp>
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                  </BSFPostProcessor>
                   <hashTree/>
                   <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                     <collectionProp name="HeaderManager.headers">
@@ -881,11 +888,11 @@
                 <hashTree>
                   <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseCode" enabled="true">
                     <collectionProp name="Asserion.test_strings">
-                      <stringProp name="52470">501</stringProp>
+                      <stringProp name="49586">200</stringProp>
                     </collectionProp>
                     <stringProp name="TestPlan.comments">baaa</stringProp>
                     <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-                    <boolProp name="Assertion.assume_success">true</boolProp>
+                    <boolProp name="Assertion.assume_success">false</boolProp>
                     <intProp name="Assertion.test_type">2</intProp>
                     <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                   </ResponseAssertion>
@@ -899,6 +906,13 @@
                     <intProp name="Assertion.test_type">16</intProp>
                     <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                   </ResponseAssertion>
+                  <hashTree/>
+                  <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="script"> if (prev.getResponseCode() == &quot;501&quot;) { prev.setResponseOK(); }</stringProp>
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                  </BSFPostProcessor>
                   <hashTree/>
                   <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                     <collectionProp name="HeaderManager.headers">
@@ -1487,7 +1501,7 @@
                 <hashTree>
                   <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseCode" enabled="true">
                     <collectionProp name="Asserion.test_strings">
-                      <stringProp name="52470">501</stringProp>
+                      <stringProp name="49586">200</stringProp>
                     </collectionProp>
                     <stringProp name="TestPlan.comments">baaa</stringProp>
                     <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -1549,6 +1563,13 @@
                     </collectionProp>
                     <boolProp name="UserParameters.per_iteration">false</boolProp>
                   </UserParameters>
+                  <hashTree/>
+                  <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="script"> if (prev.getResponseCode() == &quot;501&quot;) { prev.setResponseOK(); }</stringProp>
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                  </BSFPostProcessor>
                   <hashTree/>
                 </hashTree>
               </hashTree>
@@ -1787,13 +1808,20 @@
                   <hashTree/>
                   <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\ListParameters - responseCode" enabled="true">
                     <collectionProp name="Asserion.test_strings">
-                      <stringProp name="52469">500</stringProp>
+                      <stringProp name="49586">200</stringProp>
                     </collectionProp>
                     <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
                     <boolProp name="Assertion.assume_success">true</boolProp>
                     <intProp name="Assertion.test_type">2</intProp>
                     <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                   </ResponseAssertion>
+                  <hashTree/>
+                  <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                    <stringProp name="filename"></stringProp>
+                    <stringProp name="parameters"></stringProp>
+                    <stringProp name="script"> if (prev.getResponseCode() == &quot;500&quot;) { prev.setResponseOK(); }</stringProp>
+                    <stringProp name="scriptLanguage">javascript</stringProp>
+                  </BSFPostProcessor>
                   <hashTree/>
                   <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                     <collectionProp name="HeaderManager.headers">
