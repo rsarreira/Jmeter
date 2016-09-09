@@ -203,7 +203,7 @@
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseCode" enabled="true">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="51509">401</stringProp>
+                  <stringProp name="49586">200</stringProp>
                 </collectionProp>
                 <stringProp name="TestPlan.comments">baaa</stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -211,6 +211,13 @@
                 <intProp name="Assertion.test_type">2</intProp>
                 <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
               </ResponseAssertion>
+              <hashTree/>
+              <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="script"> if (prev.getResponseCode() == &quot;401&quot;) { prev.setResponseOK(); }</stringProp>
+                <stringProp name="scriptLanguage">javascript</stringProp>
+              </BSFPostProcessor>
               <hashTree/>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
@@ -10587,7 +10594,7 @@
                     <hashTree/>
                     <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\sql-stringArray-jndi\DoQuery - responseCode" enabled="true">
                       <collectionProp name="Asserion.test_strings">
-                        <stringProp name="52470">501</stringProp>
+                        <stringProp name="49586">200</stringProp>
                       </collectionProp>
                       <stringProp name="TestPlan.comments">baaa</stringProp>
                       <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -10596,7 +10603,7 @@
                       <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                     </ResponseAssertion>
                     <hashTree/>
-                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\sql-stringArray-jndi\DoQuery - responseMsg" enabled="true">
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\sql-stringArray-jndi\DoQuery - responseMsg" enabled="false">
                       <collectionProp name="Asserion.test_strings">
                         <stringProp name="-732784184">&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Apache Tomcat/8.0.33 - Error report&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}&lt;/style&gt; &lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 501 - &lt;/h1&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt; Status report&lt;/p&gt;&lt;p&gt;&lt;b&gt;message&lt;/b&gt; &lt;u&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt; &lt;u&gt;The server does not support the functionality needed to fulfill this request.&lt;/u&gt;&lt;/p&gt;&lt;hr class=&quot;line&quot;&gt;&lt;h3&gt;Apache Tomcat/8.0.33&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</stringProp>
                       </collectionProp>
@@ -10605,6 +10612,13 @@
                       <intProp name="Assertion.test_type">16</intProp>
                       <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                     </ResponseAssertion>
+                    <hashTree/>
+                    <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                      <stringProp name="filename"></stringProp>
+                      <stringProp name="parameters"></stringProp>
+                      <stringProp name="script"> if (prev.getResponseCode() == &quot;501&quot;) { prev.setResponseOK(); }</stringProp>
+                      <stringProp name="scriptLanguage">javascript</stringProp>
+                    </BSFPostProcessor>
                     <hashTree/>
                   </hashTree>
                 </hashTree>
@@ -10706,7 +10720,7 @@
                   <hashTree>
                     <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseCode" enabled="true">
                       <collectionProp name="Asserion.test_strings">
-                        <stringProp name="52470">501</stringProp>
+                        <stringProp name="49586">200</stringProp>
                       </collectionProp>
                       <stringProp name="TestPlan.comments">baaa</stringProp>
                       <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -10715,7 +10729,7 @@
                       <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                     </ResponseAssertion>
                     <hashTree/>
-                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseMsg" enabled="true">
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseMsg" enabled="false">
                       <collectionProp name="Asserion.test_strings">
                         <stringProp name="-732784184">&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Apache Tomcat/8.0.33 - Error report&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}&lt;/style&gt; &lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 501 - &lt;/h1&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt; Status report&lt;/p&gt;&lt;p&gt;&lt;b&gt;message&lt;/b&gt; &lt;u&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt; &lt;u&gt;The server does not support the functionality needed to fulfill this request.&lt;/u&gt;&lt;/p&gt;&lt;hr class=&quot;line&quot;&gt;&lt;h3&gt;Apache Tomcat/8.0.33&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</stringProp>
                       </collectionProp>
@@ -10753,6 +10767,13 @@
                         </elementProp>
                       </collectionProp>
                     </HeaderManager>
+                    <hashTree/>
+                    <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                      <stringProp name="filename"></stringProp>
+                      <stringProp name="parameters"></stringProp>
+                      <stringProp name="script"> if (prev.getResponseCode() == &quot;501&quot;) { prev.setResponseOK(); }</stringProp>
+                      <stringProp name="scriptLanguage">javascript</stringProp>
+                    </BSFPostProcessor>
                     <hashTree/>
                   </hashTree>
                 </hashTree>
@@ -10854,7 +10875,7 @@
                   <hashTree>
                     <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseCode" enabled="true">
                       <collectionProp name="Asserion.test_strings">
-                        <stringProp name="52470">501</stringProp>
+                        <stringProp name="49586">200</stringProp>
                       </collectionProp>
                       <stringProp name="TestPlan.comments">baaa</stringProp>
                       <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
@@ -10863,7 +10884,7 @@
                       <stringProp name="Scope.variable">cda\compoundJoin\DoQuery</stringProp>
                     </ResponseAssertion>
                     <hashTree/>
-                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseMsg" enabled="true">
+                    <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\compoundJoin\DoQuery - responseMsg" enabled="false">
                       <collectionProp name="Asserion.test_strings">
                         <stringProp name="-732784184">&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Apache Tomcat/8.0.33 - Error report&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}&lt;/style&gt; &lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 501 - &lt;/h1&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt; Status report&lt;/p&gt;&lt;p&gt;&lt;b&gt;message&lt;/b&gt; &lt;u&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt; &lt;u&gt;The server does not support the functionality needed to fulfill this request.&lt;/u&gt;&lt;/p&gt;&lt;hr class=&quot;line&quot;&gt;&lt;h3&gt;Apache Tomcat/8.0.33&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</stringProp>
                       </collectionProp>
@@ -10901,6 +10922,13 @@
                         </elementProp>
                       </collectionProp>
                     </HeaderManager>
+                    <hashTree/>
+                    <BSFPostProcessor guiclass="TestBeanGUI" testclass="BSFPostProcessor" testname="BSF PostProcessor" enabled="true">
+                      <stringProp name="filename"></stringProp>
+                      <stringProp name="parameters"></stringProp>
+                      <stringProp name="script"> if (prev.getResponseCode() == &quot;501&quot;) { prev.setResponseOK(); }</stringProp>
+                      <stringProp name="scriptLanguage">javascript</stringProp>
+                    </BSFPostProcessor>
                     <hashTree/>
                   </hashTree>
                 </hashTree>
