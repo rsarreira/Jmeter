@@ -159,10 +159,7 @@
           <boolProp name="CookieManager.clearEachIteration">false</boolProp>
         </CookieManager>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="CDA - Smoke Tests" enabled="true">
-          <boolProp name="TransactionController.includeTimers">false</boolProp>
-          <boolProp name="TransactionController.parent">false</boolProp>
-        </TransactionController>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="CDA - Smoke Tests" enabled="true"/>
         <hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="InvalidLogin" enabled="true"/>
           <hashTree>
@@ -8057,7 +8054,7 @@
                 <hashTree/>
                 <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\SampleIterableSql\DoQuery - responseMsg" enabled="true">
                   <collectionProp name="Asserion.test_strings">
-                    <stringProp name="9140891">&quot;metadata&quot;:[{&quot;colName&quot;:&quot;Year&quot;,&quot;colType&quot;:&quot;Numeric&quot;,&quot;colIndex&quot;:0},{&quot;colName&quot;:&quot;STATUS&quot;,&quot;colType&quot;:&quot;String&quot;,&quot;colIndex&quot;:1},{&quot;colName&quot;:&quot;PriceSumInM&quot;,&quot;colType&quot;:&quot;String&quot;,&quot;colIndex&quot;:2}],&quot;resultset&quot;:[[2003,&quot;Shipped&quot;,&quot;$3,57M&quot;]],&quot;queryInfo&quot;:{&quot;totalRows&quot;:&quot;1&quot;}}</stringProp>
+                    <stringProp name="-1448974122">{&quot;metadata&quot;:[{&quot;colName&quot;:&quot;Year&quot;,&quot;colType&quot;:&quot;Numeric&quot;,&quot;colIndex&quot;:0},{&quot;colName&quot;:&quot;STATUS&quot;,&quot;colType&quot;:&quot;String&quot;,&quot;colIndex&quot;:1},{&quot;colName&quot;:&quot;PriceSumInM&quot;,&quot;colType&quot;:&quot;String&quot;,&quot;colIndex&quot;:2}],&quot;resultset&quot;:[[2003,&quot;Shipped&quot;,&quot;$3,57M&quot;]],&quot;queryInfo&quot;:{&quot;totalRows&quot;:&quot;1&quot;}}</stringProp>
                   </collectionProp>
                   <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                   <boolProp name="Assertion.assume_success">false</boolProp>
