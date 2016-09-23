@@ -1843,7 +1843,7 @@
             <threadCounts>true</threadCounts>
           </value>
         </objProp>
-        <stringProp name="filename">../results/ctools_cde.csv</stringProp>
+        <stringProp name="filename">../results/ctools_cdf.csv</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
