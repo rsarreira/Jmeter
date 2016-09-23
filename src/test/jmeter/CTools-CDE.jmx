@@ -19,7 +19,7 @@
           </elementProp>
           <elementProp name="defHost" elementType="Argument">
             <stringProp name="Argument.name">defHost</stringProp>
-            <stringProp name="Argument.value">nicola</stringProp>
+            <stringProp name="Argument.value">localhost</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="defPort" elementType="Argument">
@@ -11217,7 +11217,7 @@ PreviewerBackend.LOCALE_dataTables = {
               <hashTree>
                 <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="cda\FilterComponent\DoQuery - responseMsg" enabled="true">
                   <collectionProp name="Asserion.test_strings">
-                    <stringProp name="-732784184">&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;Apache Tomcat/8.0.33 - Error report&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}.line {height: 1px; background-color: #525D76; border: none;}&lt;/style&gt; &lt;/head&gt;&lt;body&gt;&lt;h1&gt;HTTP Status 501 - &lt;/h1&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt; Status report&lt;/p&gt;&lt;p&gt;&lt;b&gt;message&lt;/b&gt; &lt;u&gt;&lt;/u&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt; &lt;u&gt;The server does not support the functionality needed to fulfill this request.&lt;/u&gt;&lt;/p&gt;&lt;hr class=&quot;line&quot;&gt;&lt;h3&gt;Apache Tomcat/8.0.33&lt;/h3&gt;&lt;/body&gt;&lt;/html&gt;</stringProp>
+                    <stringProp name="-213568282">{&quot;metadata&quot;:[{&quot;colName&quot;:&quot;id&quot;,&quot;colType&quot;:&quot;Integer&quot;,&quot;colIndex&quot;:0},{&quot;colName&quot;:&quot;label&quot;,&quot;colType&quot;:&quot;String&quot;,&quot;colIndex&quot;:1}],&quot;resultset&quot;:[[1,&quot;Entry 1&quot;],[2,&quot;Entry 2&quot;],[3,&quot;Entry 3&quot;],[4,&quot;Entry 4&quot;],[5,&quot;Entry 5&quot;],[6,&quot;Entry 6&quot;],[7,&quot;Entry 7&quot;],[8,&quot;Entry 8&quot;],[9,&quot;Entry 9&quot;],[10,&quot;Entry 10&quot;],[11,&quot;Entry 11&quot;],[12,&quot;Entry 12&quot;],[13,&quot;Entry 13&quot;],[14,&quot;Entry 14&quot;],[15,&quot;Entry 15&quot;],[16,&quot;Entry 16&quot;],[17,&quot;Entry 17&quot;],[18,&quot;Entry 18&quot;],[19,&quot;Entry 19&quot;],[20,&quot;Entry 20&quot;]],&quot;queryInfo&quot;:{&quot;pageSize&quot;:&quot;20&quot;,&quot;pageStart&quot;:&quot;0&quot;,&quot;totalRows&quot;:&quot;1000&quot;}}</stringProp>
                   </collectionProp>
                   <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
                   <boolProp name="Assertion.assume_success">false</boolProp>
